@@ -198,6 +198,12 @@ The page shows a labelled profile form. Submitting it with an empty or malformed
 4. Add a helper message that describes the maximum length before users reach it.
 5. Move the fields into a reusable component while keeping IDs, names, and labels unique.
 
+## Common mistakes
+
+- Using placeholder text as the field's only label.
+- Supplying both value and defaultValue to the same input or changing between controlled and uncontrolled modes.
+- Passing native input attributes to the wrong TextField slot.
+
 ## Chapter navigation
 
 <table width="100%">
