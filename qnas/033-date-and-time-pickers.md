@@ -108,7 +108,7 @@ Check the current package and plan for the specific range component. Some range 
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous Q&amp;A</th>
