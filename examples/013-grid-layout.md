@@ -7,12 +7,12 @@ Build a responsive workspace dashboard with four summary cards, a main activity 
 ## Prerequisites
 
 - A React application with Material UI and Emotion installed.
-- Material UI's current Grid component with the \`size\` API.
+- Material UI's current Grid component with the `size` API.
 - Familiarity with the Grid lesson and the earlier Box, Container, Stack, and Typography lessons.
 
 ## Example: responsive workspace dashboard
 
-Save this as \`App.jsx\` and render \`<App />\` from the existing application entry point.
+Save this as `App.jsx` and render `<App />` from the existing application entry point.
 
 ```jsx
 import Grid from '@mui/material/Grid';
@@ -171,7 +171,7 @@ All counts and activity entries are illustrative sample data.
 - Each summary card uses all columns at xs, half at sm, and one quarter at md.
 - The second Grid container divides the page into an 8-column activity area and a 4-column sidebar at md.
 - Both lower sections use all columns at narrow widths.
-- \`rowSpacing\` and \`columnSpacing\` keep the card gaps consistent while allowing different responsive values.
+- `rowSpacing` and `columnSpacing` keep the card gaps consistent while allowing different responsive values.
 - Stack handles vertical spacing inside cards and sections.
 
 ## Expected result
@@ -180,8 +180,8 @@ At narrow widths, the summary cards and lower sections stack vertically. At medi
 
 ## Verification checklist
 
-1. Confirm that the file imports \`Grid\` from \`@mui/material/Grid\`.
-2. Confirm there is no legacy \`item\`, \`xs\`, or \`sm\` prop on Grid children.
+1. Confirm that the file imports `Grid` from `@mui/material/Grid`.
+2. Confirm there is no legacy `item`, `xs`, or `sm` prop on Grid children.
 3. At a narrow width, verify that summary cards and lower sections stack.
 4. At a medium width, verify that summary cards form four columns and the main panel is wider than the sidebar.
 5. Check that text wraps and no panel creates horizontal page overflow.
@@ -193,7 +193,7 @@ At narrow widths, the summary cards and lower sections stack vertically. At medi
 1. Add a chart placeholder area and decide how many columns it should occupy.
 2. Change the card widths at a large breakpoint and observe the wrap behavior.
 3. Add an action aligned to the right of the page title using a Grid row or Stack.
-4. Try a custom \`columns\` value and update all item sizes to match.
+4. Try a custom `columns` value and update all item sizes to match.
 5. Use CSS Grid for a variation that requires an item to span two rows, then compare which primitive expresses the layout more clearly.
 
 ## Chapter navigation
