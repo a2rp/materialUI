@@ -149,6 +149,13 @@ Recent Material UI versions also provide a loading state for IconButton. It disa
 - Making destructive actions too easy to activate without clear feedback.
 - Using an icon whose meaning is not clear in the surrounding context.
 
+## Recap
+
+- Install Material UI icons as a separate package and import only the icons the interface uses.
+- Give icon-only actions an accessible name and make destructive or toggle behavior clear.
+- Use IconButton for actions and links for navigation, preserving the correct semantic element.
+- Review tooltip behavior, focus visibility, contrast, size, and direction-sensitive icon meaning.
+
 ## Chapter navigation
 
 <table width="100%">
