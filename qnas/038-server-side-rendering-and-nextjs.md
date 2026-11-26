@@ -136,7 +136,7 @@ No. Next.js can keep server-rendered regions on the server while hydrating inter
 
 ## Chapter navigation
 
-<table style="width:100%">
+<table width="100%">
 <thead><tr><th>Previous Q&amp;A</th><th>Chapter lesson</th><th>Chapter example</th><th>Next Q&amp;A</th></tr></thead>
 <tbody><tr><td><a href="037-localization-rtl-and-internationalization.md">037 - Localization, RTL, and internationalization</a></td><td><a href="../lessons/038-server-side-rendering-and-nextjs.md">Lesson</a></td><td><a href="../examples/038-server-side-rendering-and-nextjs.md">Example</a></td><td><a href="039-testing-material-ui-components.md">039 - Testing Material UI components</a></td></tr></tbody>
 </table>
