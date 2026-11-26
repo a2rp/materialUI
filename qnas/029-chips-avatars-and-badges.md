@@ -118,7 +118,7 @@ The Chip remains rendered because `onDelete` only calls your callback. Remove th
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous Q&amp;A</th>
