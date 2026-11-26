@@ -21,7 +21,7 @@ Add the component to the existing application:
 
 ```text
 src/
-5�@ App.jsx
+  App.jsx
 ```
 
 ## Example: account settings tabs
