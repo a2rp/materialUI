@@ -176,6 +176,12 @@ The page shows an account settings heading, two outlined sections, readable para
 4. If you introduce a custom typography variant, decide which HTML element it should render as. In a TypeScript project, add the matching type augmentation.
 5. Replace the system font stack with a locally available font and confirm the fallback behavior.
 
+## Common mistakes
+
+- Choosing a heading variant only for its visual size and skipping the document's semantic heading order.
+- Applying no-wrap to important text without a way for users to read the full value.
+- Assuming a font listed in the theme is available without loading it in the application.
+
 ## Chapter navigation
 
 <table width="100%">
