@@ -12,11 +12,11 @@ Use the direct component import:
 import Grid from '@mui/material/Grid';
 ```
 
-Current Grid uses the \`size\` prop for item width. Older examples may show different imports and props, so check that the code matches the Material UI version in the project.
+Current Grid uses the `size` prop for item width. Older examples may show different imports and props, so check that the code matches the Material UI version in the project.
 
 ## 3. How do I create a Grid container?
 
-Add the \`container\` prop to a Grid:
+Add the `container` prop to a Grid:
 
 ```jsx
 <Grid container spacing={2}>
@@ -27,17 +27,17 @@ Add the \`container\` prop to a Grid:
 
 The nested Grid components are the children in the row layout.
 
-## 4. Should I add \`item\` to each Grid child?
+## 4. Should I add `item` to each Grid child?
 
-No. In the current Grid API, every Grid is an item. The old \`item\` prop is not part of the current API.
+No. In the current Grid API, every Grid is an item. The old `item` prop is not part of the current API.
 
-## 5. What does \`size={6}\` mean?
+## 5. What does `size={6}` mean?
 
 With the default 12 columns, it means that the item occupies six columns, or half of the row. Its rendered width is fluid relative to its container.
 
 ## 6. How do I set different widths at breakpoints?
 
-Pass a responsive object to \`size\`:
+Pass a responsive object to `size`:
 
 ```jsx
 <Grid size={{ xs: 12, md: 8 }}>Main content</Grid>
@@ -52,7 +52,7 @@ The items may wrap to another row. Check each breakpoint and include offsets whe
 
 ## 8. Can I change the total number of columns?
 
-Yes. Set \`columns\` on the container and set item sizes relative to that number:
+Yes. Set `columns` on the container and set item sizes relative to that number:
 
 ```jsx
 <Grid container columns={{ xs: 4, md: 12 }}>
@@ -62,25 +62,25 @@ Yes. Set \`columns\` on the container and set item sizes relative to that number
 
 Make sure both values are coordinated at every breakpoint.
 
-## 9. What does the \`spacing\` prop control?
+## 9. What does the `spacing` prop control?
 
 It controls the gap between Grid children. Numeric values use the theme spacing helper, so the computed distance depends on the theme.
 
-## 10. How are \`rowSpacing\` and \`columnSpacing\` different?
+## 10. How are `rowSpacing` and `columnSpacing` different?
 
 They set the vertical and horizontal gaps separately. Use them when rows and columns need different spacing. Both can be responsive.
 
-## 11. What does \`offset\` do?
+## 11. What does `offset` do?
 
-It moves an item to the right by a number of columns, or uses \`auto\` to push it toward the far edge. Ensure the item size and offset fit the row at each breakpoint.
+It moves an item to the right by a number of columns, or uses `auto` to push it toward the far edge. Ensure the item size and offset fit the row at each breakpoint.
 
-## 12. What do \`size="auto"\` and \`size="grow"\` mean?
+## 12. What do `size="auto"` and `size="grow"` mean?
 
-\`auto\` sizes the item to its content. \`grow\` lets the item use remaining space. These are useful in mixed rows with fixed-content actions and a flexible text region.
+`auto` sizes the item to its content. `grow` lets the item use remaining space. These are useful in mixed rows with fixed-content actions and a flexible text region.
 
 ## 13. Is Material UI Grid implemented with CSS Grid?
 
-No. Material UI Grid uses CSS Flexbox. For row spanning or CSS Grid's automatic placement behavior, use the CSS Grid layout system through \`sx\` or a stylesheet.
+No. Material UI Grid uses CSS Flexbox. For row spanning or CSS Grid's automatic placement behavior, use the CSS Grid layout system through `sx` or a stylesheet.
 
 ## 14. Can Grid items span multiple rows?
 
@@ -98,9 +98,9 @@ Material UI Grid arranges page content. MUI X Data Grid displays tabular dataset
 
 Choose Stack when the items form one row or one column with consistent spacing. Choose Grid when you need column widths that relate to a configurable column count.
 
-## 18. What should I use when upgrading code with \`xs\` or \`item\` props?
+## 18. What should I use when upgrading code with `xs` or `item` props?
 
-Migrate to the current Grid API: import \`Grid\`, remove \`item\`, and express breakpoint widths with \`size\`. Check the installed Material UI version and its migration guidance before changing an existing application.
+Migrate to the current Grid API: import `Grid`, remove `item`, and express breakpoint widths with `size`. Check the installed Material UI version and its migration guidance before changing an existing application.
 
 ## 19. How can I align content vertically within a row?
 
@@ -112,7 +112,7 @@ Use flex alignment on the Grid container:
 </Grid>
 ```
 
-Use \`justifyContent\` for main-axis placement when the layout needs it.
+Use `justifyContent` for main-axis placement when the layout needs it.
 
 ## 20. What should I check if a Grid layout overflows?
 
