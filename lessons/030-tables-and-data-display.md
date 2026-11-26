@@ -198,7 +198,7 @@ Consider MUI X Data Grid when you need capabilities such as column virtualizatio
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous lesson</th>
