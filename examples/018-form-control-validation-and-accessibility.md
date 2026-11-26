@@ -259,6 +259,12 @@ Submitting an empty form displays a summary and field-level messages. The full n
 5. Provide a clear retry path when the server rejects the submission.
 6. Test the form with keyboard-only interaction and enlarged text.
 
+## Common mistakes
+
+- Showing an error color without corrective text connected to the invalid field.
+- Focusing the first invalid control while leaving the error summary disconnected from the form.
+- Relying on native browser validation while also expecting a custom noValidate submit flow.
+
 ## Chapter navigation
 
 <table width="100%">
