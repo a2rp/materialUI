@@ -170,6 +170,12 @@ The page shows an outlined introduction, a project card, and three FAQ rows. Sel
 5. Make the project route work with the application's router component.
 6. Add a long FAQ answer and inspect reading order and scrolling behavior.
 
+## Common mistakes
+
+- Using an Accordion without a clear summary label or with repeated, non-unique panel IDs.
+- Putting another interactive control inside the Accordion summary.
+- Controlling one expanded panel with inconsistent state or unmounting content without considering lost local state.
+
 ## Chapter navigation
 
 <table width="100%">
