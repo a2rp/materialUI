@@ -7,12 +7,12 @@ Create a project assignment form with a searchable owner field, multiple member 
 ## Prerequisites
 
 - A React application with Material UI and Emotion installed.
-- Material UI v9 for the primitive \`getOptionValue\` mapping used below.
+- Material UI v9 for the primitive `getOptionValue` mapping used below.
 - Familiarity with React state and Autocomplete's separate value and input text states.
 
 ## Example: project assignment
 
-Save this as \`App.jsx\` and render \`<App />\` from the existing application entry point.
+Save this as `App.jsx` and render `<App />` from the existing application entry point.
 
 ```jsx
 import { useState } from 'react';
@@ -198,13 +198,13 @@ The people and skills are illustrative local data. The form does not contact a s
 
 ## What the example demonstrates
 
-- The owner field stores a primitive person ID using Material UI v9's \`getOptionValue\`.
+- The owner field stores a primitive person ID using Material UI v9's `getOptionValue`.
 - The owner's selected value and typed search text use separate state.
 - Option rows show a person's name, team, and active state.
 - Inactive people appear in the suggestion list but cannot be selected.
 - The members field allows multiple object values and compares them by stable ID.
 - The skills field allows multiple suggestions and arbitrary free-solo text.
-- Each input receives the parameters provided through \`renderInput\`.
+- Each input receives the parameters provided through `renderInput`.
 - The form has visible labels and helper text for all three fields.
 
 ## Expected result
@@ -226,9 +226,9 @@ Typing in Project owner filters the people. Inactive people appear disabled. Pro
 
 1. Add an asynchronous owner search and handle loading, empty, and error states.
 2. Debounce input changes and ignore stale search responses.
-3. Add categories with \`groupBy\` and sort the options by the same category.
+3. Add categories with `groupBy` and sort the options by the same category.
 4. Replace free-solo skills with a validated create flow if arbitrary skills should not be accepted.
-5. Add a selected-value display using \`renderValue\` and preserve the item props it supplies.
+5. Add a selected-value display using `renderValue` and preserve the item props it supplies.
 6. Add form validation that explains when an owner or skill is required.
 
 ## Chapter navigation
