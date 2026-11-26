@@ -55,11 +55,14 @@ Material UI ships locale bundles for component text. Pass the appropriate bundle
 
 ```jsx
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { deepmerge } from "@mui/utils";
 import { frFR } from "@mui/material/locale";
 
 const frenchTheme = createTheme(
-  { palette: { primary: { main: "#275dad" } } },
-  frFR,
+  deepmerge(
+    { palette: { primary: { main: "#275dad" } } },
+    frFR,
+  ),
 );
 
 function App() {
@@ -70,6 +73,8 @@ function App() {
   );
 }
 ```
+
+For forward compatibility, merge locale options before calling createTheme. Passing locale data as another createTheme argument is retained for backward compatibility and may be removed in a future version.
 
 The bundle covers Material UI component labels. It does not translate application messages or automatically configure every separately distributed library. MUI X components have their own localization configuration, so use the mechanism for the exact package you render.
 
