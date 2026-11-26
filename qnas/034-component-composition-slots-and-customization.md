@@ -108,7 +108,7 @@ Review hover, focus-visible, disabled, selected, expanded, dark mode, and respon
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous Q&amp;A</th>
