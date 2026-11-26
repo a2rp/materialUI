@@ -114,7 +114,7 @@ Check whether rows, columns, or getRowId are being recreated unnecessarily. Stab
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous Q&amp;A</th>
