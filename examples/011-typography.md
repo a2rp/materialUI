@@ -12,7 +12,7 @@ Build a small account settings page that uses a shared typography scale, preserv
 
 ## Example: a responsive settings page
 
-Add this as \`App.jsx\`. The application's existing entry point should render \`<App />\`.
+Add this as `App.jsx`. The application's existing entry point should render `<App />`.
 
 ```jsx
 import { useMemo } from 'react';
@@ -146,13 +146,13 @@ The sample uses a system font stack so it does not require a web font download. 
 
 ## What to notice
 
-- The page has one \`h1\` and uses \`h2\` for each major section.
-- Each section is a semantic \`section\` labelled by its visible heading.
-- The \`h1\` and \`h2\` visual styles come from the shared theme.
-- Supporting text uses \`body2\` and the theme's secondary text color.
-- \`responsiveFontSizes\` adjusts the theme typography scale for viewport widths.
+- The page has one `h1` and uses `h2` for each major section.
+- Each section is a semantic `section` labelled by its visible heading.
+- The `h1` and `h2` visual styles come from the shared theme.
+- Supporting text uses `body2` and the theme's secondary text color.
+- `responsiveFontSizes` adjusts the theme typography scale for viewport widths.
 - The long preference key can wrap rather than widening or clipping the page.
-- \`useMemo\` creates the shared theme once for this example component.
+- `useMemo` creates the shared theme once for this example component.
 
 ## Expected result
 
@@ -160,8 +160,8 @@ The page shows an account settings heading, two outlined sections, readable para
 
 ## Verification checklist
 
-1. Inspect the page and confirm exactly one page-level \`h1\`.
-2. Confirm the Profile and Notifications headings render as \`h2\` elements.
+1. Inspect the page and confirm exactly one page-level `h1`.
+2. Confirm the Profile and Notifications headings render as `h2` elements.
 3. Resize the viewport and check that headings and paragraph text remain readable.
 4. Increase browser text size and check for overlap or clipped content.
 5. Confirm the font family has a usable fallback when the preferred font is unavailable.
@@ -172,7 +172,7 @@ The page shows an account settings heading, two outlined sections, readable para
 
 1. Add a third section with a heading and short description. Keep its semantic level consistent with the existing sections.
 2. Change the theme's body line height and compare readability for longer paragraphs.
-3. Add one local \`sx\` adjustment to a supporting caption without changing the global caption variant.
+3. Add one local `sx` adjustment to a supporting caption without changing the global caption variant.
 4. If you introduce a custom typography variant, decide which HTML element it should render as. In a TypeScript project, add the matching type augmentation.
 5. Replace the system font stack with a locally available font and confirm the fallback behavior.
 
