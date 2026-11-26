@@ -21,7 +21,7 @@ Material UI provides a custom Select, a native Select, and TextField's select mo
 
 ## A custom Select
 
-The custom Select renders a Material UI popup with MenuItem choices. A label needs to be connected to the Select with \`labelId\`. For the outlined variant, pass the label to the Select as well so the outline and floating label line up:
+The custom Select renders a Material UI popup with MenuItem choices. A label needs to be connected to the Select with `labelId`. For the outlined variant, pass the label to the Select as well so the outline and floating label line up:
 
 ```jsx
 import { useState } from 'react';
@@ -53,7 +53,7 @@ function RegionField() {
 }
 ```
 
-The selected value is controlled by React state. Give the Select an accessible name through the label association or an appropriate \`aria-label\`. Add helper text and associate it with the control when users need extra instructions.
+The selected value is controlled by React state. Give the Select an accessible name through the label association or an appropriate `aria-label`. Add helper text and associate it with the control when users need extra instructions.
 
 ## TextField select mode
 
@@ -81,7 +81,7 @@ TextField creates the field structure and connects the label. Use the direct For
 
 ## Select value and controlled state
 
-A controlled Select receives its current value from state. Update the value in \`onChange\`:
+A controlled Select receives its current value from state. Update the value in `onChange`:
 
 ```jsx
 const [status, setStatus] = useState('draft');
@@ -99,7 +99,7 @@ Use values that are stable and meaningful in application state. The displayed la
 
 ## Placeholder and empty values
 
-Select does not have a \`placeholder\` prop like a text input. One option is to include an empty value and customize what the empty state displays:
+Select does not have a `placeholder` prop like a text input. One option is to include an empty value and customize what the empty state displays:
 
 ```jsx
 <Select
@@ -120,7 +120,7 @@ A visible InputLabel is usually clearer for a form field. If you use an empty di
 
 ## Multiple selection
 
-Set \`multiple\` to allow more than one choice. The controlled value is an array:
+Set `multiple` to allow more than one choice. The controlled value is an array:
 
 ```jsx
 const [notifications, setNotifications] = useState([]);
@@ -140,7 +140,7 @@ A multi-select is useful when users need to choose several values from a relativ
 
 ## Group options
 
-Group related choices with ListSubheader. A native select can use HTML \`optgroup\`:
+Group related choices with ListSubheader. A native select can use HTML `optgroup`:
 
 ```jsx
 import ListSubheader from '@mui/material/ListSubheader';
@@ -180,7 +180,7 @@ import NativeSelect from '@mui/material/NativeSelect';
 </FormControl>
 ```
 
-Associate the InputLabel with the native select using the matching \`htmlFor\` and \`id\`. Native options use HTML \`option\` elements rather than MenuItem.
+Associate the InputLabel with the native select using the matching `htmlFor` and `id`. Native options use HTML `option` elements rather than MenuItem.
 
 Choose NativeSelect when its simpler platform behavior is useful. Choose the custom Select when the interface needs Material UI's popup rendering and richer composition. Native controls can look or behave differently across platforms, which is often intentional.
 
@@ -230,7 +230,7 @@ Menu handles positioning and keyboard focus behavior for its items. Keep actions
 
 ## Control the popup state
 
-Select and Menu can be controlled by state when the application needs to coordinate their open and closed behavior. Use \`open\` with the corresponding change or close handlers. Use an uncontrolled initial-open prop only when the application does not need to own the state.
+Select and Menu can be controlled by state when the application needs to coordinate their open and closed behavior. Use `open` with the corresponding change or close handlers. Use an uncontrolled initial-open prop only when the application does not need to own the state.
 
 Avoid changing focus behavior casually. Menus use focus management so users can navigate choices with the keyboard. If you compose a custom list instead of Menu, you become responsible for correct focus behavior.
 
@@ -239,9 +239,9 @@ Avoid changing focus behavior casually. Menus use focus management so users can 
 - Using Menu when the user is entering a form value.
 - Using Select for long, searchable, async, or creatable lists instead of Autocomplete.
 - Omitting a visible label or accessible name.
-- Forgetting to match \`InputLabel.id\` with \`Select.labelId\`.
-- Omitting the outlined Select's \`label\` prop when using an InputLabel.
-- Using \`MenuItem\` children with NativeSelect instead of native \`option\` elements.
+- Forgetting to match `InputLabel.id` with `Select.labelId`.
+- Omitting the outlined Select's `label` prop when using an InputLabel.
+- Using `MenuItem` children with NativeSelect instead of native `option` elements.
 - Treating Select's empty display as a built-in placeholder.
 - Forgetting that the value for a multiple Select is an array.
 - Opening a Menu without a meaningful trigger or leaving it open after its action.
