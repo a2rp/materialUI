@@ -26,7 +26,7 @@ FormGroup is a helper for organizing a set of related checkbox or switch control
 
 ## 7. How do I give a radio group a label?
 
-Use FormLabel with a stable ID and connect it through RadioGroup's \`aria-labelledby\`:
+Use FormLabel with a stable ID and connect it through RadioGroup's `aria-labelledby`:
 
 ```jsx
 <FormLabel id="delivery-label">Delivery speed</FormLabel>
@@ -41,7 +41,7 @@ The shared name groups the native radio inputs so that only one option in the se
 
 ## 9. How do I make a radio group controlled?
 
-Pass the selected string to \`value\` and update it in \`onChange\`:
+Pass the selected string to `value` and update it in `onChange`:
 
 ```jsx
 <RadioGroup
@@ -55,13 +55,13 @@ Pass the selected string to \`value\` and update it in \`onChange\`:
 
 ## 10. How do I control a checkbox or switch?
 
-Use the boolean \`checked\` state and update it from \`event.target.checked\`. Do not use the selected value string for a simple on/off state.
+Use the boolean `checked` state and update it from `event.target.checked`. Do not use the selected value string for a simple on/off state.
 
-## 11. What is the difference between \`checked\` and \`defaultChecked\`?
+## 11. What is the difference between `checked` and `defaultChecked`?
 
-\`checked\` makes the control controlled by React. \`defaultChecked\` sets its initial state while leaving it uncontrolled. Do not provide both on the same control.
+`checked` makes the control controlled by React. `defaultChecked` sets its initial state while leaving it uncontrolled. Do not provide both on the same control.
 
-## 12. What does \`indeterminate\` mean on a checkbox?
+## 12. What does `indeterminate` mean on a checkbox?
 
 It visually represents a partially selected group, such as when some child options are checked. The form value is still checked or unchecked; indeterminate is not a third submitted value.
 
@@ -75,7 +75,7 @@ Yes. A set of independent preferences is a common checkbox use case. If each ite
 
 ## 15. Can a radio group be horizontal?
 
-Yes. Set the \`row\` prop when there is enough space and a horizontal arrangement remains readable. Use a vertical layout when labels are long or the viewport is narrow.
+Yes. Set the `row` prop when there is enough space and a horizontal arrangement remains readable. Use a vertical layout when labels are long or the viewport is narrow.
 
 ## 16. Should a radio group always select a default option?
 
@@ -83,7 +83,7 @@ If the task expects one choice, a valid default can make the state clear. Do not
 
 ## 17. How do I label a control without visible label text?
 
-Provide an accessible name directly on the input, for example through \`slotProps.input\`. A visible label is usually preferable because it helps both screen-reader and sighted users.
+Provide an accessible name directly on the input, for example through `slotProps.input`. A visible label is usually preferable because it helps both screen-reader and sighted users.
 
 ## 18. Does a disabled checkbox explain why an option is unavailable?
 
