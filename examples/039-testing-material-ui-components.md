@@ -320,6 +320,13 @@ npx jest src/ProjectSettingsForm.test.jsx src/DeleteProjectAction.test.jsx
 
 This command is shown as an example and has not been run in the notes repository. Component tests cannot verify real browser layout, visual contrast, or popover placement; use browser-level checks for those questions.
 
+## Common mistakes
+
+- Querying generated Emotion classes or private DOM structure instead of user-facing roles and labels.
+- Forgetting to await asynchronous user interactions and resulting feedback.
+- Treating a passing DOM test as proof of visual layout, browser behavior, or assistive-technology usability.
+- Leaving portals, timers, or shared state behind between tests.
+
 ## Chapter navigation
 
 <table width="100%">
