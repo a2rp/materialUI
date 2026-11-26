@@ -87,8 +87,9 @@ export default function App() {
   }
 
   function toggleQuickNote(event) {
+    const trigger = event.currentTarget;
     setQuickNoteAnchor((currentAnchor) =>
-      currentAnchor ? null : event.currentTarget,
+      currentAnchor ? null : trigger,
     );
   }
 
