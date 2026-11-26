@@ -282,7 +282,7 @@ The top Badge wraps a single Button. Its accessible name includes the action and
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous example</th>
