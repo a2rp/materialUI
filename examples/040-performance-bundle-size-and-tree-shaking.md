@@ -305,6 +305,13 @@ After each change, compare the same route and interaction:
 
 Keep a change only when it improves the measured target without creating a worse loading or interaction experience.
 
+## Common mistakes
+
+- Assuming a particular import style guarantees a smaller production bundle without analyzing the actual build.
+- Memoizing values before measuring whether recalculation is a performance problem.
+- Splitting a route or dependency that users need immediately without checking its loading cost and layout stability.
+- Comparing development bundle behavior as if it were the production output.
+
 ## Chapter navigation
 
 <table width="100%">
