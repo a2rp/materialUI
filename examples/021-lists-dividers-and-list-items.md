@@ -22,7 +22,7 @@ Use the component in the existing application:
 
 ```text
 src/
-5�@ App.jsx
+  App.jsx
 ```
 
 ## Example: mail folders and messages
