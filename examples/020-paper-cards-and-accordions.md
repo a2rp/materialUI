@@ -12,7 +12,7 @@ Build a project overview page with an outlined Paper section, a card whose main 
 
 ## Example: project overview and FAQ
 
-Save this as \`App.jsx\` and render \`<App />\` from the existing application entry point.
+Save this as `App.jsx` and render `<App />` from the existing application entry point.
 
 ```jsx
 import { useState } from 'react';
@@ -145,7 +145,7 @@ The project route and FAQ answers are example content. The project route should 
 - CardActions contains a separate button, outside the link region.
 - The FAQ uses controlled expansion state, so at most one panel is open.
 - The section and heading elements follow a clear page hierarchy.
-- Accordion summaries have unique IDs and matching \`aria-controls\` values.
+- Accordion summaries have unique IDs and matching `aria-controls` values.
 
 ## Expected result
 
