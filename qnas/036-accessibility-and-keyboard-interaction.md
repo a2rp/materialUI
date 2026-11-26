@@ -116,7 +116,7 @@ No. Automated tools can detect some structural problems, but they cannot judge w
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous Q&amp;A</th>
