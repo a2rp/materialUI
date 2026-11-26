@@ -164,6 +164,13 @@ Avoid converting a local calendar date to a UTC timestamp without considering ti
 - Assuming display format determines API serialization.
 - Showing a validation border without explaining how to fix the value.
 
+## Recap
+
+- Date and time pickers are a separate MUI X package and require a compatible adapter and date library.
+- Keep controlled values, validation, locale, time zone, and serialization rules explicit.
+- Choose DatePicker, TimePicker, or DateTimePicker according to the value users must enter.
+- Connect validation feedback to the field and test boundary dates, invalid values, and responsive behavior.
+
 ## Chapter navigation
 
 <table width="100%">
