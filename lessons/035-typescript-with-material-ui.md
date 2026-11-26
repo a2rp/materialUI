@@ -277,6 +277,13 @@ A declaration file only applies if it is included in the TypeScript program. Che
 - Casting a styled component to a type its implementation does not support.
 - Assuming a TypeScript declaration changes runtime behavior.
 
+## Recap
+
+- Reuse Material UI component prop types and let event types be inferred where possible.
+- Type custom wrappers from the component props they extend, while keeping the public API focused.
+- Use module augmentation for custom palette entries, theme fields, and component variants.
+- Keep TypeScript declarations aligned with the runtime theme and verify that styling props accept the intended types.
+
 ## Chapter navigation
 
 <table width="100%">
