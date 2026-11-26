@@ -300,7 +300,7 @@ In the running application, confirm that:
 
 ## Chapter navigation
 
-<table style="width:100%">
+<table width="100%">
 <thead><tr><th>Previous example</th><th>Chapter lesson</th><th>Chapter Q&amp;A</th><th>Next example</th></tr></thead>
 <tbody><tr><td><a href="040-performance-bundle-size-and-tree-shaking.md">040 - Performance, bundle size, and tree shaking</a></td><td><a href="../lessons/041-form-library-integration.md">Lesson</a></td><td><a href="../qnas/041-form-library-integration.md">Q&amp;A</a></td><td><a href="042-production-design-system-and-maintenance.md">042 - Production design systems and maintenance</a></td></tr></tbody>
 </table>
