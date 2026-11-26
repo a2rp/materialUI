@@ -17,15 +17,15 @@ Material UI provides several layout components with different responsibilities:
 
 | Component | Main role | Use it when |
 | --- | --- | --- |
-| \`Box\` | Generic theme-aware wrapper | You need a semantic wrapper or local layout styling through \`sx\` |
-| \`Container\` | Centered page-width boundary | Content needs a readable maximum width and horizontal gutters |
-| \`Stack\` | One-dimensional arrangement | Immediate children should flow in a row or column with shared spacing |
+| `Box` | Generic theme-aware wrapper | You need a semantic wrapper or local layout styling through `sx` |
+| `Container` | Centered page-width boundary | Content needs a readable maximum width and horizontal gutters |
+| `Stack` | One-dimensional arrangement | Immediate children should flow in a row or column with shared spacing |
 
 Use the simplest component that communicates the layout intent. A two-dimensional layout with aligned rows and columns belongs in Grid, covered in the next chapter. A surface with elevation or an outlined panel is usually better represented by Paper or a card component than by a layout wrapper alone.
 
 ## Box: the general-purpose wrapper
 
-Box renders a \`div\` by default and gives it access to the theme and the \`sx\` styling system. Use the \`component\` prop when a different semantic element fits the content:
+Box renders a `div` by default and gives it access to the theme and the `sx` styling system. Use the `component` prop when a different semantic element fits the content:
 
 ```jsx
 import Box from '@mui/material/Box';
@@ -49,7 +49,7 @@ function ArticleSection() {
 
 Box is useful for layout and local styling, but it does not add page width, spacing between children, or an elevated surface by itself. Use Container for the page boundary and Stack for repeated space between items.
 
-The \`sx\` prop supports theme-aware values. For example, \`p: 2\` uses the theme spacing scale and \`color: 'text.secondary'\` reads a theme palette value. The exact CSS value depends on the theme configuration.
+The `sx` prop supports theme-aware values. For example, `p: 2` uses the theme spacing scale and `color: 'text.secondary'` reads a theme palette value. The exact CSS value depends on the theme configuration.
 
 ## Container: a centered content boundary
 
@@ -68,13 +68,13 @@ function HelpPage() {
 }
 ```
 
-The \`maxWidth\` prop accepts breakpoint values such as \`xs\`, \`sm\`, \`md\`, \`lg\`, and \`xl\`. It can also be set to \`false\` to disable the built-in maximum width. The default maximum is \`lg\`.
+The `maxWidth` prop accepts breakpoint values such as `xs`, `sm`, `md`, `lg`, and `xl`. It can also be set to `false` to disable the built-in maximum width. The default maximum is `lg`.
 
-Container includes horizontal gutters by default. Use \`disableGutters\` only when another parent or layout rule already supplies the required horizontal spacing. Avoid nesting multiple Containers unless the page genuinely has separate content boundaries.
+Container includes horizontal gutters by default. Use `disableGutters` only when another parent or layout rule already supplies the required horizontal spacing. Avoid nesting multiple Containers unless the page genuinely has separate content boundaries.
 
-The \`fixed\` prop makes the width follow the minimum width of the active breakpoint. The default behavior is fluid up to the selected maximum. Choose based on how the page should respond as the viewport grows.
+The `fixed` prop makes the width follow the minimum width of the active breakpoint. The default behavior is fluid up to the selected maximum. Choose based on how the page should respond as the viewport grows.
 
-The \`component\` prop can give the root an appropriate semantic role, such as \`main\`:
+The `component` prop can give the root an appropriate semantic role, such as `main`:
 
 ```jsx
 <Container component="main" maxWidth="lg">
@@ -84,7 +84,7 @@ The \`component\` prop can give the root an appropriate semantic role, such as \
 
 ## Stack: one axis with shared spacing
 
-Stack arranges its immediate children in a column by default. Set \`direction="row"\` to arrange them horizontally:
+Stack arranges its immediate children in a column by default. Set `direction="row"` to arrange them horizontally:
 
 ```jsx
 import Stack from '@mui/material/Stack';
@@ -96,7 +96,7 @@ import Stack from '@mui/material/Stack';
 </Stack>
 ```
 
-A numeric \`spacing\` value is converted with the theme spacing helper. This keeps gaps consistent with the design system:
+A numeric `spacing` value is converted with the theme spacing helper. This keeps gaps consistent with the design system:
 
 ```jsx
 <Stack direction="row" spacing={2}>
@@ -107,7 +107,7 @@ A numeric \`spacing\` value is converted with the theme spacing helper. This kee
 
 Use the native MUI components for production controls. The plain buttons above only keep the layout snippet focused.
 
-You can set flex alignment and justification through \`sx\`:
+You can set flex alignment and justification through `sx`:
 
 ```jsx
 <Stack
@@ -146,7 +146,7 @@ Ensure the row still fits its content. A responsive row with long text may need 
 
 ## Dividers between Stack children
 
-Use the \`divider\` prop to insert a divider between each immediate child. For a horizontal row, use a vertical divider:
+Use the `divider` prop to insert a divider between each immediate child. For a horizontal row, use a vertical divider:
 
 ```jsx
 import Divider from '@mui/material/Divider';
@@ -167,7 +167,7 @@ A divider should help communicate grouping. Do not add one to every Stack automa
 
 ## Flex gap and child margins
 
-By default, Stack spacing is implemented by applying spacing rules between children. Child margins can conflict with those rules. When the layout needs CSS flexbox \`gap\`, set \`useFlexGap\`:
+By default, Stack spacing is implemented by applying spacing rules between children. Child margins can conflict with those rules. When the layout needs CSS flexbox `gap`, set `useFlexGap`:
 
 ```jsx
 <Stack
@@ -186,7 +186,7 @@ Flexbox gap avoids the nested-child spacing behavior, and works naturally with w
 
 ## Flexible rows and minimum width
 
-A flex item can keep a minimum width based on its content. This may cause long text to push a neighboring action outside the layout. Set \`minWidth: 0\` on the relevant flex child when it needs permission to shrink:
+A flex item can keep a minimum width based on its content. This may cause long text to push a neighboring action outside the layout. Set `minWidth: 0` on the relevant flex child when it needs permission to shrink:
 
 ```jsx
 <Stack direction="row" spacing={2} sx={{ alignItems: 'center' }}>
@@ -245,7 +245,7 @@ Container sets the readable page width, Stack defines the vertical rhythm betwee
 - Using Stack for a layout that must align items along two axes.
 - Adding margins to Stack children while also relying on Stack's default spacing rules.
 - Assuming Stack spacing automatically makes a horizontal row wrap.
-- Forgetting \`minWidth: 0\` on a flex item that must shrink around long text.
+- Forgetting `minWidth: 0` on a flex item that must shrink around long text.
 - Adding a divider without matching its orientation to the Stack direction.
 - Using arbitrary pixel gaps instead of the theme's spacing scale without a design reason.
 
