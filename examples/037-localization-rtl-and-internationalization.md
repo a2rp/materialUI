@@ -16,7 +16,7 @@ This example builds a preferences screen with English, French, and Arabic. One l
 The snippets are for a React application using the Emotion style engine. Install packages compatible with the React and Material UI versions in your project:
 
 ~~~bash
-npm install @mui/material @emotion/react @emotion/styled @emotion/cache
+npm install @mui/material @mui/utils @emotion/react @emotion/styled @emotion/cache
 npm install @mui/stylis-plugin-rtl stylis @mui/x-date-pickers dayjs
 ~~~
 
@@ -118,12 +118,13 @@ If a server extracts or rehydrates Emotion styles, configure its cache and inser
 
 ## 3. Provide the active locale
 
-Create **src/i18n/LocaleProvider.jsx**. The selected resource drives both the Material UI theme and the date picker localization provider.
+Create **src/i18n/LocaleProvider.jsx**. The selected resource drives both the Material UI theme and the date picker localization provider. The locale options are deep-merged before createTheme so the theme is created from one options object.
 
 ~~~jsx
 import * as React from "react";
 import { CacheProvider } from "@emotion/react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { deepmerge } from "@mui/utils";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 
@@ -136,7 +137,7 @@ export function LocaleProvider({ locale, children }) {
   const active = locales[locale] ?? locales["en-US"];
 
   const theme = React.useMemo(
-    () => createTheme({ direction: active.direction }, active.materialLocale),
+    () => createTheme(deepmerge({ direction: active.direction }, active.materialLocale)),
     [active],
   );
 
