@@ -47,6 +47,8 @@ The wrapper accepts the Button props while requiring a label. Omit a prop when t
 For event handlers, allow TypeScript to infer the event type from the component where possible. When a callback is part of your own public API, give it an explicit type:
 
 ```tsx
+import TextField from "@mui/material/TextField";
+
 type SearchFieldProps = {
   value: string;
   onValueChange: (nextValue: string) => void;
@@ -74,7 +76,10 @@ import { forwardRef, type ReactNode } from "react";
 import Button from "@mui/material/Button";
 import type { ButtonProps } from "@mui/material/Button";
 
-type LabeledButtonProps = Omit<ButtonProps, "children" | "component"> & {
+type LabeledButtonProps = Omit<
+  ButtonProps,
+  "children" | "component" | "href"
+> & {
   children: ReactNode;
 };
 
