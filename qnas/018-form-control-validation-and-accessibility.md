@@ -14,11 +14,11 @@ The label gives the control an accessible name and explains its purpose to every
 
 ## 4. How do I connect a label to a custom input?
 
-Give the input an \`id\` and set the label's \`htmlFor\` to that same unique value.
+Give the input an `id` and set the label's `htmlFor` to that same unique value.
 
 ## 5. How do I connect helper text to a custom input?
 
-Give the helper text an ID and reference it from the input with \`aria-describedby\`:
+Give the helper text an ID and reference it from the input with `aria-describedby`:
 
 ```jsx
 <Input id="account-name" aria-describedby="account-name-help" />
@@ -29,15 +29,15 @@ Give the helper text an ID and reference it from the input with \`aria-described
 
 TextField connects its own label and helper text when supplied with the appropriate props.
 
-## 6. What does the \`error\` prop do?
+## 6. What does the `error` prop do?
 
 It applies the component's visual error state. It does not explain the problem by itself. Pair it with a concise message that tells users what to fix.
 
-## 7. Should I add \`aria-invalid\` to every TextField?
+## 7. Should I add `aria-invalid` to every TextField?
 
-TextField's error state handles its own error presentation. For custom inputs, set \`aria-invalid="true"\` when the current value is invalid and connect the explanatory message.
+TextField's error state handles its own error presentation. For custom inputs, set `aria-invalid="true"` when the current value is invalid and connect the explanatory message.
 
-## 8. Does \`required\` replace application validation?
+## 8. Does `required` replace application validation?
 
 No. It communicates a requirement and enables browser constraint validation. The application still needs to validate submitted data and handle server responses.
 
@@ -55,11 +55,11 @@ Helper text provides normal instructions or context. An error message explains w
 
 ## 12. How do I give a radio group an accessible heading?
 
-Use a FormLabel or legend and connect it to RadioGroup with \`aria-labelledby\`. Use a semantic fieldset when it fits the form structure.
+Use a FormLabel or legend and connect it to RadioGroup with `aria-labelledby`. Use a semantic fieldset when it fits the form structure.
 
 ## 13. How should a group error message be associated with the radio choices?
 
-Give the message an ID and reference it from RadioGroup using \`aria-describedby\`. Set an error state on the group when the selection is invalid.
+Give the message an ID and reference it from RadioGroup using `aria-describedby`. Set an error state on the group when the selection is invalid.
 
 ## 14. What is an error summary?
 
