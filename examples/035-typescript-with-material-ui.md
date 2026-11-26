@@ -262,7 +262,7 @@ ThemeProvider wraps the controls that use the custom theme. Components outside t
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous example</th>
