@@ -273,7 +273,7 @@ When search matches no projects, the table keeps its heading and displays a mess
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous example</th>
