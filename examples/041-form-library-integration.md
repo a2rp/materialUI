@@ -59,6 +59,10 @@ export default function ProjectForm({ project, saveProject }) {
     },
   });
 
+  const ownerField = register("owner", {
+    required: "Enter an owner.",
+  });
+
   React.useEffect(() => {
     if (!project) {
       return;
@@ -135,13 +139,11 @@ export default function ProjectForm({ project, saveProject }) {
         />
 
         <TextField
-          name="owner"
+          name={ownerField.name}
+          onChange={ownerField.onChange}
+          onBlur={ownerField.onBlur}
+          inputRef={ownerField.ref}
           label="Project owner"
-          inputRef={register("owner", {
-            required: "Enter an owner.",
-          }).ref}
-          onChange={register("owner").onChange}
-          onBlur={register("owner").onBlur}
           error={Boolean(errors.owner)}
           helperText={
             errors.owner?.message ?? "For example, the team or department."
@@ -230,28 +232,7 @@ export default function ProjectForm({ project, saveProject }) {
 }
 ~~~
 
-This version illustrates the mappings, but the owner field should register only once. Keep the registration result in a variable so all of its props come from the same registration call. The corrected field setup is:
-
-~~~jsx
-const ownerField = register("owner", {
-  required: "Enter an owner.",
-});
-
-<TextField
-  name={ownerField.name}
-  onChange={ownerField.onChange}
-  onBlur={ownerField.onBlur}
-  inputRef={ownerField.ref}
-  label="Project owner"
-  error={Boolean(errors.owner)}
-  helperText={
-    errors.owner?.message ?? "For example, the team or department."
-  }
-  required
-/>
-~~~
-
-Use this corrected setup in the complete component: place the ownerField declaration after useForm, then replace the owner TextField block above with this version. This avoids creating multiple registrations for the same field.
+Keep the name, event handlers, and input ref from one registration result so they remain attached to the same field.
 
 ## 2. Provide an asynchronous save function
 
