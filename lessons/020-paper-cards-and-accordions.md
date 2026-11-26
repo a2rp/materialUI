@@ -14,15 +14,15 @@ After this chapter, you should be able to:
 
 | Component | Main purpose |
 | --- | --- |
-| \`Paper\` | A generic surface with theme elevation or an outline |
-| \`Card\` | A compact surface for one subject and its related actions |
-| \`Accordion\` | A section that users can expand or collapse |
+| `Paper` | A generic surface with theme elevation or an outline |
+| `Card` | A compact surface for one subject and its related actions |
+| `Accordion` | A section that users can expand or collapse |
 
 A Box is a general wrapper. Paper adds a surface treatment. Card adds a content structure. Accordion adds expandable behavior. Choose the component whose purpose matches the interface.
 
 ## Paper surfaces
 
-Paper represents a surface that sits above or apart from its background. Its \`elevation\` prop uses the theme's shadow scale from 0 to 24:
+Paper represents a surface that sits above or apart from its background. Its `elevation` prop uses the theme's shadow scale from 0 to 24:
 
 ```jsx
 import Paper from '@mui/material/Paper';
@@ -34,7 +34,7 @@ import Paper from '@mui/material/Paper';
 
 Use a small set of elevation levels to create hierarchy. Avoid giving every surface a different shadow, which makes the interface feel noisy.
 
-Set \`variant="outlined"\` for a flat border without elevation:
+Set `variant="outlined"` for a flat border without elevation:
 
 ```jsx
 <Paper variant="outlined" sx={{ p: 2 }}>
@@ -42,7 +42,7 @@ Set \`variant="outlined"\` for a flat border without elevation:
 </Paper>
 ```
 
-Paper renders a div by default. Use the \`component\` prop when the content needs a semantic element:
+Paper renders a div by default. Use the `component` prop when the content needs a semantic element:
 
 ```jsx
 <Paper component="section" aria-labelledby="summary-heading">
@@ -134,9 +134,9 @@ import Typography from '@mui/material/Typography';
 </Accordion>
 ```
 
-The summary is the interactive control. Give it a clear name that explains what content expands. Material UI uses the summary's ID and \`aria-controls\` to connect the control and content.
+The summary is the interactive control. Give it a clear name that explains what content expands. Material UI uses the summary's ID and `aria-controls` to connect the control and content.
 
-The default heading level may not match every page. In current v9, use \`slotProps.heading.component\` to set the heading element that fits the document hierarchy:
+The default heading level may not match every page. In current v9, use `slotProps.heading.component` to set the heading element that fits the document hierarchy:
 
 ```jsx
 <Accordion slotProps={{ heading: { component: 'h3' } }}>
@@ -148,9 +148,9 @@ Choose heading levels in sequence. Do not skip levels simply to get a particular
 
 ## Controlled and uncontrolled expansion
 
-An uncontrolled Accordion manages its own expansion. Set \`defaultExpanded\` for an initial open state.
+An uncontrolled Accordion manages its own expansion. Set `defaultExpanded` for an initial open state.
 
-A controlled Accordion receives its state from React and reports changes through \`onChange\`:
+A controlled Accordion receives its state from React and reports changes through `onChange`:
 
 ```jsx
 const [expanded, setExpanded] = useState(false);
