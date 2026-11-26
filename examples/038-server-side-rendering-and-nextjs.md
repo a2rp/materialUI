@@ -264,6 +264,13 @@ Before shipping, confirm that:
 - No hydration warnings appear in the browser console.
 - Any user-specific theme or locale is selected consistently before the first render.
 
+## Common mistakes
+
+- Installing or rendering providers for both Next.js routers instead of the router the application uses.
+- Marking the whole application as a client component when only a small interactive control needs client behavior.
+- Creating Emotion caches per render or collecting styles through an integration for a different framework version.
+- Exposing secrets or server-only data through a client component.
+
 ## Chapter navigation
 
 <table width="100%">
