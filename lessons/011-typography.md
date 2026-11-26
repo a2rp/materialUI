@@ -12,9 +12,9 @@ After this chapter, you should be able to:
 
 ## Why typography needs a system
 
-Typography gives an interface a readable structure. A consistent system helps people scan titles, section headings, body copy, labels, and supporting details. Material UI provides the \`Typography\` component and theme typography tokens so that the same roles can be reused throughout an application.
+Typography gives an interface a readable structure. A consistent system helps people scan titles, section headings, body copy, labels, and supporting details. Material UI provides the `Typography` component and theme typography tokens so that the same roles can be reused throughout an application.
 
-Use typography variants to communicate a text role, not to make every individual line visually unique. For example, use \`h1\` for the page's main heading, \`h2\` for a major section, \`body1\` for primary reading text, and \`caption\` for short supporting information.
+Use typography variants to communicate a text role, not to make every individual line visually unique. For example, use `h1` for the page's main heading, `h2` for a major section, `body1` for primary reading text, and `caption` for short supporting information.
 
 ## The Typography component
 
@@ -24,7 +24,7 @@ Import the component directly when using it:
 import Typography from '@mui/material/Typography';
 ```
 
-The \`variant\` prop selects a named style from the theme:
+The `variant` prop selects a named style from the theme:
 
 ```jsx
 <Typography variant="h1">Account settings</Typography>
@@ -37,19 +37,19 @@ Material UI supplies these common variants:
 
 | Variant group | Variants | Typical role |
 | --- | --- | --- |
-| Headings | \`h1\` through \`h6\` | Page and section titles |
-| Subtitles | \`subtitle1\`, \`subtitle2\` | Short supporting headings |
-| Body | \`body1\`, \`body2\` | Paragraphs, descriptions, and secondary copy |
-| Utility | \`button\`, \`caption\`, \`overline\` | Control labels and compact supporting text |
-| Inherited | \`inherit\` | Inherit the surrounding font settings |
+| Headings | `h1` through `h6` | Page and section titles |
+| Subtitles | `subtitle1`, `subtitle2` | Short supporting headings |
+| Body | `body1`, `body2` | Paragraphs, descriptions, and secondary copy |
+| Utility | `button`, `caption`, `overline` | Control labels and compact supporting text |
+| Inherited | `inherit` | Inherit the surrounding font settings |
 
-The default variant is \`body1\`. Prefer the variants that match the role of the content. A button's visible label should normally come from its component rather than an unrelated typography variant.
+The default variant is `body1`. Prefer the variants that match the role of the content. A button's visible label should normally come from its component rather than an unrelated typography variant.
 
 ## Visual variant and semantic element are separate
 
 A Typography variant controls styling. The rendered HTML element controls document semantics. These are related by default, but they are not the same choice.
 
-For example, a visually large page title may need to render as an \`h1\`:
+For example, a visually large page title may need to render as an `h1`:
 
 ```jsx
 <Typography variant="h1" component="h1">
@@ -57,7 +57,7 @@ For example, a visually large page title may need to render as an \`h1\`:
 </Typography>
 ```
 
-If the page already has an \`h1\`, a visually large subsection title can use a lower semantic heading:
+If the page already has an `h1`, a visually large subsection title can use a lower semantic heading:
 
 ```jsx
 <Typography variant="h2" component="h2">
@@ -65,15 +65,15 @@ If the page already has an \`h1\`, a visually large subsection title can use a l
 </Typography>
 ```
 
-The default mapping uses heading elements for \`h1\` through \`h6\`, maps \`subtitle1\` and \`subtitle2\` to \`h6\`, and maps body variants to paragraphs. Use the \`component\` prop when an individual instance needs a different semantic element.
+The default mapping uses heading elements for `h1` through `h6`, maps `subtitle1` and `subtitle2` to `h6`, and maps body variants to paragraphs. Use the `component` prop when an individual instance needs a different semantic element.
 
-Do not select a heading only because its font size looks right. Preserve a sensible heading order for assistive technology and page navigation. If styling and semantic level need different values, set both \`variant\` and \`component\` explicitly.
+Do not select a heading only because its font size looks right. Preserve a sensible heading order for assistive technology and page navigation. If styling and semantic level need different values, set both `variant` and `component` explicitly.
 
-An application can customize the default mapping through the theme's \`MuiTypography.defaultProps.variantMapping\`. Apply a global mapping only when the same semantic rule is suitable across the application.
+An application can customize the default mapping through the theme's `MuiTypography.defaultProps.variantMapping`. Apply a global mapping only when the same semantic rule is suitable across the application.
 
 ## Customize the theme typography
 
-Typography tokens live in the theme's \`typography\` object. They can set a shared font family, adjust variants, and define a scale used by all components that read the theme.
+Typography tokens live in the theme's `typography` object. They can set a shared font family, adjust variants, and define a scale used by all components that read the theme.
 
 ```jsx
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -128,7 +128,7 @@ function SettingsPage() {
 
 The chosen font must actually be available to the browser. Listing a font family in the theme does not download or bundle font files. If the design uses a web font, load it using the application's chosen asset strategy and include reliable fallback fonts.
 
-Variant values can use CSS units and properties. Relative units such as \`rem\` make the scale respond to the root font size. Avoid shrinking the browser's root font size just to simplify calculations; users may have changed it for readability.
+Variant values can use CSS units and properties. Relative units such as `rem` make the scale respond to the root font size. Avoid shrinking the browser's root font size just to simplify calculations; users may have changed it for readability.
 
 ## Responsive typography
 
@@ -150,7 +150,7 @@ const theme = createTheme({
 });
 ```
 
-The \`responsiveFontSizes\` helper can adjust theme typography across breakpoints:
+The `responsiveFontSizes` helper can adjust theme typography across breakpoints:
 
 ```jsx
 import {
@@ -173,13 +173,13 @@ Use one responsive strategy at a time for each variant. Explicit breakpoint rule
 
 ## Common text layout properties
 
-Typography accepts common text props and the \`sx\` styling system:
+Typography accepts common text props and the `sx` styling system:
 
-- \`align\` sets text alignment, for example \`left\`, \`center\`, \`right\`, or \`justify\`.
-- \`gutterBottom\` adds a bottom margin for common heading spacing.
-- \`noWrap\` prevents wrapping and truncates overflow with an ellipsis when the element has a constrained width.
-- \`paragraph\` is a legacy convenience for paragraph spacing. Prefer a semantic element and explicit spacing in new code.
-- \`sx\` applies a local style using theme-aware values.
+- `align` sets text alignment, for example `left`, `center`, `right`, or `justify`.
+- `gutterBottom` adds a bottom margin for common heading spacing.
+- `noWrap` prevents wrapping and truncates overflow with an ellipsis when the element has a constrained width.
+- `paragraph` is a legacy convenience for paragraph spacing. Prefer a semantic element and explicit spacing in new code.
+- `sx` applies a local style using theme-aware values.
 
 ```jsx
 <Typography
@@ -191,7 +191,7 @@ Typography accepts common text props and the \`sx\` styling system:
 </Typography>
 ```
 
-Use \`noWrap\` only when truncation is an acceptable way to present the content. For content that must remain fully available, allow wrapping or provide another accessible way to read it. Ellipsis does not make hidden text available to assistive technology in every context.
+Use `noWrap` only when truncation is an acceptable way to present the content. For content that must remain fully available, allow wrapping or provide another accessible way to read it. Ellipsis does not make hidden text available to assistive technology in every context.
 
 ## Custom variants
 
@@ -212,7 +212,7 @@ const theme = createTheme({
 
 A custom variant is used by Typography when the theme provides its style. Decide separately what semantic HTML element it should render as. In TypeScript projects, augment the relevant Material UI types when adding a custom variant so that the new name is accepted by the compiler. Type augmentation is covered in the TypeScript chapter.
 
-Avoid adding a custom variant for a one-off spacing or color adjustment. Use the existing variant with \`sx\` for isolated cases; reserve theme variants for roles that recur in the design system.
+Avoid adding a custom variant for a one-off spacing or color adjustment. Use the existing variant with `sx` for isolated cases; reserve theme variants for roles that recur in the design system.
 
 ## Readability and accessibility
 
@@ -230,17 +230,17 @@ Typography cannot correct unclear content. Keep headings descriptive, paragraphs
 
 ## Common mistakes
 
-- Using \`h1\` for every large-looking title, creating a misleading document outline.
-- Assuming \`variant="h2"\` always renders an \`h2\` element without checking the mapping or \`component\` prop.
-- Choosing a tiny \`caption\` variant for information users must read to complete a task.
-- Setting \`noWrap\` on important content without a way to inspect the full text.
-- Listing a font in \`fontFamily\` without ensuring it is loaded or available.
+- Using `h1` for every large-looking title, creating a misleading document outline.
+- Assuming `variant="h2"` always renders an `h2` element without checking the mapping or `component` prop.
+- Choosing a tiny `caption` variant for information users must read to complete a task.
+- Setting `noWrap` on important content without a way to inspect the full text.
+- Listing a font in `fontFamily` without ensuring it is loaded or available.
 - Adding many custom variants that duplicate existing roles and make the system hard to maintain.
 - Hardcoding a breakpoint font size without checking the design at intermediate widths.
 
 ## Recap
 
-Use \`Typography\` variants to keep visual text roles consistent. Choose the HTML element deliberately because a variant and its semantic element are separate. Set shared font and variant rules in the theme, use responsive sizing where the design requires it, and check the rendered page for hierarchy, contrast, wrapping, and readability.
+Use `Typography` variants to keep visual text roles consistent. Choose the HTML element deliberately because a variant and its semantic element are separate. Set shared font and variant rules in the theme, use responsive sizing where the design requires it, and check the rendered page for hierarchy, contrast, wrapping, and readability.
 
 ## Practice task
 
