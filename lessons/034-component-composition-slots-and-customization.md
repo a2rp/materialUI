@@ -234,7 +234,7 @@ Avoid global changes that make unrelated controls harder to use. Test customizat
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous lesson</th>
