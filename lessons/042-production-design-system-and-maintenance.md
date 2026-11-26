@@ -89,6 +89,7 @@ For applications that need light and dark schemes, CSS theme variables can expre
 
 ~~~tsx
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import type { PropsWithChildren } from 'react';
 
 export const theme = createTheme({
   cssVariables: true,
@@ -98,7 +99,7 @@ export const theme = createTheme({
   },
 });
 
-export function AppTheme({ children }: React.PropsWithChildren) {
+export function AppTheme({ children }: PropsWithChildren) {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 }
 ~~~
