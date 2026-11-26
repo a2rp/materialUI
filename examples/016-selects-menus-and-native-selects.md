@@ -248,6 +248,12 @@ The page shows three preference fields and an Account actions menu. Selecting a 
 5. Compare the custom Select and NativeSelect interaction on a mobile device.
 6. Replace the local save handler with a real persistence flow and report errors clearly.
 
+## Common mistakes
+
+- Connecting a Select to the wrong label ID or omitting the visible label needed by an outlined field.
+- Mixing native option elements with the custom Select menu's MenuItem children.
+- Assuming local preference state is persisted after a reload.
+
 ## Chapter navigation
 
 <table width="100%">
