@@ -20,6 +20,8 @@ After this chapter, you should be able to:
 Use normal React composition when the component's content is meant to be supplied by the application:
 
 ```jsx
+import { Card, CardActions, CardContent, Typography, Button } from "@mui/material";
+
 <Card>
   <CardContent>
     <Typography variant="h6">Release notes</Typography>
@@ -53,6 +55,8 @@ A slot is a named internal part of a component. The slots prop replaces a slot's
 
 ```jsx
 import Fade from "@mui/material/Fade";
+import IconButton from "@mui/material/IconButton";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Tooltip from "@mui/material/Tooltip";
 
 <Tooltip
@@ -87,6 +91,8 @@ Choose the narrowest styling tool that fits the need:
 The sx prop can read values from the theme and can target stable inner utility classes:
 
 ```jsx
+import Button from "@mui/material/Button";
+
 <Button
   variant="contained"
   sx={{
@@ -124,10 +130,12 @@ Base reusable styles on theme values when possible. This helps the component ada
 
 ## Shared theme customization
 
-Theme configuration can set default props, styles, and prop-based variants for a component:
+Theme configuration can set default props, styles, and prop-based variants for a component. Theme component customization is not tree-shakable, so use a reusable component for heavy customizations:
 
 ```jsx
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+import Button from "@mui/material/Button";
 
 const theme = createTheme({
   components: {
@@ -139,16 +147,14 @@ const theme = createTheme({
         root: {
           borderRadius: 10,
           textTransform: "none",
+          variants: [
+            {
+              props: { variant: "outlined", color: "primary" },
+              style: { borderWidth: 2 },
+            },
+          ],
         },
       },
-      variants: [
-        {
-          props: { variant: "outlined", color: "primary" },
-          style: {
-            borderWidth: 2,
-          },
-        },
-      ],
     },
   },
 });
@@ -169,6 +175,9 @@ Use defaultProps for a consistent default that a caller may still override. Use 
 Interactive states such as hover, focus-visible, disabled, selected, and expanded can have higher CSS specificity than a basic root rule. Target the correct utility state class and preserve the focus treatment.
 
 ```jsx
+import IconButton from "@mui/material/IconButton";
+import SettingsIcon from "@mui/icons-material/Settings";
+
 <IconButton
   sx={{
     "&.Mui-focusVisible": {
