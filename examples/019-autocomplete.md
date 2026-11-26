@@ -231,6 +231,12 @@ Typing in Project owner filters the people. Inactive people appear disabled. Pro
 5. Add a selected-value display using `renderValue` and preserve the item props it supplies.
 6. Add form validation that explains when an owner or skill is required.
 
+## Common mistakes
+
+- Comparing option objects by reference when data is recreated; define stable option identity for the installed API.
+- Dropping the parameters supplied to the custom input renderer and losing required refs or accessibility props.
+- Returning a non-string label in free-solo mode or failing to preserve item props for custom selected values.
+
 ## Chapter navigation
 
 <table width="100%">
