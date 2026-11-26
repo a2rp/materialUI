@@ -13,7 +13,7 @@ After this chapter, you should be able to:
 
 ## List structure
 
-Material UI's List renders a \`ul\` by default, and ListItem renders an \`li\`. Use them to present related rows such as navigation, settings, conversations, or messages:
+Material UI's List renders a `ul` by default, and ListItem renders an `li`. Use them to present related rows such as navigation, settings, conversations, or messages:
 
 ```jsx
 import List from '@mui/material/List';
@@ -55,9 +55,9 @@ import ListItemButton from '@mui/material/ListItemButton';
 </List>
 ```
 
-The component prop controls the rendered element. Use a button element for an action, and an anchor for navigation. For a client-side router, pass its link component through \`component\` and supply the route.
+The component prop controls the rendered element. Use a button element for an action, and an anchor for navigation. For a client-side router, pass its link component through `component` and supply the route.
 
-A \`selected\` prop styles the active row. For a current navigation destination, also expose the current page state with \`aria-current="page"\`:
+A `selected` prop styles the active row. For a current navigation destination, also expose the current page state with `aria-current="page"`:
 
 ```jsx
 <ListItemButton
@@ -70,7 +70,7 @@ A \`selected\` prop styles the active row. For a current navigation destination,
 </ListItemButton>
 ```
 
-Selected styling alone does not explain the navigation state to assistive technology. Use a semantic state such as \`aria-current\` where it applies.
+Selected styling alone does not explain the navigation state to assistive technology. Use a semantic state such as `aria-current` where it applies.
 
 ## Icons, avatars, and secondary text
 
@@ -138,7 +138,7 @@ Give icon-only secondary actions an accessible name that includes enough context
 
 ## Dense and gutterless lists
 
-Use \`dense\` to create a more compact list. It can be set on List and is available to descendant items. Use \`disablePadding\` on List when the surrounding surface already manages outer spacing. Use \`disableGutters\` on an item when its parent defines the horizontal alignment.
+Use `dense` to create a more compact list. It can be set on List and is available to descendant items. Use `disablePadding` on List when the surrounding surface already manages outer spacing. Use `disableGutters` on an item when its parent defines the horizontal alignment.
 
 Compact spacing should still leave enough room for the content and targets. Check the result on touch devices and with enlarged text.
 
@@ -169,7 +169,7 @@ For nested navigation, place another List inside the parent item and label the r
 
 ## Dividers between items
 
-Divider provides a visual separator. Use it outside the List for content sections. Inside a List, use a list-compatible element or the item's \`divider\` prop:
+Divider provides a visual separator. Use it outside the List for content sections. Inside a List, use a list-compatible element or the item's `divider` prop:
 
 ```jsx
 <List>
@@ -182,7 +182,7 @@ Divider provides a visual separator. Use it outside the List for content section
 </List>
 ```
 
-If you need a standalone Divider between list children, set \`component="li"\` so the list contains valid list children:
+If you need a standalone Divider between list children, set `component="li"` so the list contains valid list children:
 
 ```jsx
 <List>
@@ -196,11 +196,11 @@ If you need a standalone Divider between list children, set \`component="li"\` s
 </List>
 ```
 
-A horizontal Divider renders as a separator. Set \`aria-hidden="true"\` when the line is purely decorative. When the Divider contains text or another element, use a non-semantic wrapper and presentational role so the separator does not add unnecessary noise to screen readers.
+A horizontal Divider renders as a separator. Set `aria-hidden="true"` when the line is purely decorative. When the Divider contains text or another element, use a non-semantic wrapper and presentational role so the separator does not add unnecessary noise to screen readers.
 
 ## Vertical dividers
 
-Set \`orientation="vertical"\` in a flex row. Use \`flexItem\` so the divider receives the appropriate height:
+Set `orientation="vertical"` in a flex row. Use `flexItem` so the divider receives the appropriate height:
 
 ```jsx
 import Divider from '@mui/material/Divider';
