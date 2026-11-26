@@ -282,6 +282,13 @@ Before shipping, confirm that:
 - Loaded or switched records reset the form with complete values.
 - Server-side validation and authorization remain in place.
 
+## Recap
+
+- Choose one clear source of truth for each field and initialize controlled values with complete defaults.
+- Use Controller for controlled Material UI components and register for compatible native inputs.
+- Map nonstandard value and change callbacks deliberately, especially for Select, checkbox, and date controls.
+- Connect validation and submission state to accessible feedback, and reset values when the edited record changes.
+
 ## Chapter navigation
 
 <table width="100%">
