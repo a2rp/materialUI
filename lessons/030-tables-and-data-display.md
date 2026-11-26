@@ -196,6 +196,13 @@ Consider MUI X Data Grid when you need capabilities such as column virtualizatio
 - Using color alone to show status or sort direction.
 - Rebuilding a complex data grid from basic Table components when a dedicated grid fits better.
 
+## Recap
+
+- Use semantic Table components for straightforward tabular information and choose Data Grid when richer interactions justify it.
+- Preserve table captions, headers, accessible sorting state, and responsive access to important columns.
+- Sort before paginating, use stable row keys, and reset pagination when filters or page size change.
+- Give users clear empty, loading, and error states.
+
 ## Chapter navigation
 
 <table width="100%">
