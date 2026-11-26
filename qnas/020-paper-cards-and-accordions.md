@@ -8,13 +8,13 @@ Paper is a surface container with a theme-based elevation shadow or an outline. 
 
 Box is a general theme-aware wrapper. Paper adds a surface treatment. If the layout needs spacing or semantics but no surface, Box or Container may be clearer.
 
-## 3. What does Paper's \`elevation\` prop control?
+## 3. What does Paper's `elevation` prop control?
 
 It selects a shadow level from 0 to 24. Use a small set of levels to establish hierarchy rather than assigning a different shadow to every panel.
 
 ## 4. How do I create a flat Paper with a border?
 
-Set \`variant="outlined"\`. This displays a border without the elevation shadow.
+Set `variant="outlined"`. This displays a border without the elevation shadow.
 
 ## 5. What is Card designed for?
 
@@ -22,7 +22,7 @@ Card groups content and actions about one subject. It can include a header, medi
 
 ## 6. Does Card render a semantic article by default?
 
-No. Its root is a generic element. Use \`component="article"\` or another suitable element when the content structure calls for it.
+No. Its root is a generic element. Use `component="article"` or another suitable element when the content structure calls for it.
 
 ## 7. What is CardActionArea for?
 
@@ -50,19 +50,19 @@ Give the summary a descriptive name that tells users what the panel contains. Av
 
 ## 13. How do I connect a summary with its content?
 
-Provide an ID on AccordionSummary and set its \`aria-controls\` to the panel content ID. Material UI uses this relationship to expose the expanded panel.
+Provide an ID on AccordionSummary and set its `aria-controls` to the panel content ID. Material UI uses this relationship to expose the expanded panel.
 
 ## 14. What heading level does Accordion use by default?
 
-The current default is an h3 heading. Use \`slotProps.heading.component\` to change the semantic heading element when the page structure requires a different level.
+The current default is an h3 heading. Use `slotProps.heading.component` to change the semantic heading element when the page structure requires a different level.
 
 ## 15. How do I set an Accordion open by default?
 
-Use \`defaultExpanded\` for an uncontrolled initial state. Use the \`expanded\` prop with \`onChange\` when React should own expansion.
+Use `defaultExpanded` for an uncontrolled initial state. Use the `expanded` prop with `onChange` when React should own expansion.
 
 ## 16. How can I allow only one Accordion to be open at a time?
 
-Store the active panel ID in state and set each Accordion's \`expanded\` prop by comparing its ID with that state. Clear the ID when the active panel is collapsed.
+Store the active panel ID in state and set each Accordion's `expanded` prop by comparing its ID with that state. Clear the ID when the active panel is collapsed.
 
 ## 17. Should only one Accordion be open at a time?
 
@@ -70,7 +70,7 @@ It depends on the content. One-open behavior can save space, while multiple open
 
 ## 18. Is Accordion content mounted when collapsed?
 
-Yes, by default. Use \`slotProps.transition.unmountOnExit\` to unmount collapsed content when there is a performance reason. Consider that unmounting can discard local state.
+Yes, by default. Use `slotProps.transition.unmountOnExit` to unmount collapsed content when there is a performance reason. Consider that unmounting can discard local state.
 
 ## 19. How do I choose between a card and an accordion?
 
