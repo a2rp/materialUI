@@ -19,7 +19,7 @@ The primary example uses Next.js App Router, Material UI with Emotion, and Recha
 Install the packages used by the example:
 
 ~~~bash
-npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/material @mui/icons-material @emotion/react @emotion/styled
 npm install recharts
 ~~~
 
