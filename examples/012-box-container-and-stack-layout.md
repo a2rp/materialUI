@@ -161,6 +161,12 @@ The directory has a centered heading and three member rows. On a narrow viewport
 4. Try removing `useFlexGap` and compare the spacing behavior.
 5. Change the Container maximum width and inspect how the rows read on a large screen.
 
+## Common mistakes
+
+- Combining Stack spacing with child margins and getting larger or inconsistent gaps.
+- Forgetting minWidth zero on a flex child that must shrink around long text.
+- Assuming the sample contact details or local actions connect to a real directory or service.
+
 ## Chapter navigation
 
 <table width="100%">
