@@ -257,6 +257,13 @@ Before shipping, confirm that:
 - A language switch preserves focus, form data, and the current task.
 - Tests cover translation, RTL layout, keyboard use, and realistic formats.
 
+## Recap
+
+- Localization includes application messages, component labels, number and date formats, and document language.
+- Treat right-to-left direction as a rendering concern involving the document, theme, style cache, portals, and direction-resilient CSS.
+- Configure date adapters and picker locale text separately from Material UI component locale bundles.
+- Merge theme options before createTheme and test locale switching, accessibility, and layout direction together.
+
 ## Chapter navigation
 
 <table width="100%">
