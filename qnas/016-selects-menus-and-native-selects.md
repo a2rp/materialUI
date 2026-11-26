@@ -10,7 +10,7 @@ Use Autocomplete when users need to search a long list, load options asynchronou
 
 ## 3. How do I label a custom Select?
 
-Connect an InputLabel ID to Select's \`labelId\`. For the outlined variant, also pass the visible label through Select's \`label\` prop:
+Connect an InputLabel ID to Select's `labelId`. For the outlined variant, also pass the visible label through Select's `label` prop:
 
 ```jsx
 <InputLabel id="region-label">Region</InputLabel>
@@ -21,11 +21,11 @@ Connect an InputLabel ID to Select's \`labelId\`. For the outlined variant, also
 
 ## 4. Can TextField create a select field?
 
-Yes. Set \`select\` on TextField and pass MenuItem children. TextField creates the form field structure and label association for the common case.
+Yes. Set `select` on TextField and pass MenuItem children. TextField creates the form field structure and label association for the common case.
 
 ## 5. How do I keep a Select value in React state?
 
-Pass the state value to Select and update it in \`onChange\`:
+Pass the state value to Select and update it in `onChange`:
 
 ```jsx
 <Select
@@ -38,7 +38,7 @@ Pass the state value to Select and update it in \`onChange\`:
 
 ## 6. What is the difference between NativeSelect and Select?
 
-NativeSelect renders a platform-native HTML \`select\` element and \`option\` children. Select renders a Material UI popup with MenuItem children. Choose based on the experience and customization the interface needs.
+NativeSelect renders a platform-native HTML `select` element and `option` children. Select renders a Material UI popup with MenuItem children. Choose based on the experience and customization the interface needs.
 
 ## 7. When is a native select useful?
 
@@ -46,15 +46,15 @@ It can provide familiar platform behavior and a convenient picker on mobile devi
 
 ## 8. How do I label a NativeSelect?
 
-Give the select an ID and set the InputLabel's \`htmlFor\` to the same value. The accessible name should identify the field.
+Give the select an ID and set the InputLabel's `htmlFor` to the same value. The accessible name should identify the field.
 
-## 9. Does Select support a \`placeholder\` prop?
+## 9. Does Select support a `placeholder` prop?
 
-No. Use a visible InputLabel. If an empty visual state is required, use \`displayEmpty\` and \`renderValue\` with an empty option, and ensure the empty state is not mistaken for a selected value.
+No. Use a visible InputLabel. If an empty visual state is required, use `displayEmpty` and `renderValue` with an empty option, and ensure the empty state is not mistaken for a selected value.
 
 ## 10. What is the value type for a multiple Select?
 
-It is an array of selected values. Initialize controlled state with an array and update it from \`event.target.value\`.
+It is an array of selected values. Initialize controlled state with an array and update it from `event.target.value`.
 
 ## 11. When should I use a multiple Select?
 
@@ -62,15 +62,15 @@ Use it when users need several choices from a relatively short list. For long li
 
 ## 12. How do I group options in a custom Select?
 
-Use ListSubheader to create meaningful visual groups. For NativeSelect, use HTML \`optgroup\`.
+Use ListSubheader to create meaningful visual groups. For NativeSelect, use HTML `optgroup`.
 
 ## 13. Why does the outlined Select need its label in two places?
 
-The InputLabel's ID connects the accessible label, while Select's \`label\` prop gives the outlined input the text it needs for the floating-label notch. They serve different purposes.
+The InputLabel's ID connects the accessible label, while Select's `label` prop gives the outlined input the text it needs for the floating-label notch. They serve different purposes.
 
 ## 14. How do I open a Menu from a button?
 
-Store the clicked button element as the anchor and set Menu's \`open\` based on whether that element exists. Pass the anchor through \`anchorEl\` and close the menu by clearing the anchor.
+Store the clicked button element as the anchor and set Menu's `open` based on whether that element exists. Pass the anchor through `anchorEl` and close the menu by clearing the anchor.
 
 ## 15. How should a menu item behave after a choice?
 
@@ -90,11 +90,11 @@ A menu presents a command or choice list with menu interaction behavior. A Selec
 
 ## 19. What should I use for an accessible name if there is no visible label?
 
-Provide an appropriate \`aria-label\` or another programmatic label. A visible label is preferred for most form fields because it helps all users identify the field.
+Provide an appropriate `aria-label` or another programmatic label. A visible label is preferred for most form fields because it helps all users identify the field.
 
 ## 20. What should I check when a Select is inside a form?
 
-Check the label association, stable \`name\`, controlled value, selected option, helper or error text, and keyboard interaction. Also make sure the submitted value is the expected stable value, not just a presentation label.
+Check the label association, stable `name`, controlled value, selected option, helper or error text, and keyboard interaction. Also make sure the submitted value is the expected stable value, not just a presentation label.
 
 ## Chapter navigation
 
