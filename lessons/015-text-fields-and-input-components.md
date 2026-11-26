@@ -29,15 +29,15 @@ import TextField from '@mui/material/TextField';
 
 TextField supports three visual variants:
 
-- \`outlined\`: the default bordered style.
-- \`filled\`: a filled background style.
-- \`standard\`: an underline style that remains supported.
+- `outlined`: the default bordered style.
+- `filled`: a filled background style.
+- `standard`: an underline style that remains supported.
 
 Choose a consistent variant for related fields. The visual variant should not change the field's label, value, or behavior.
 
 ## Labels, IDs, and helper text
 
-Give each field a clear label. Provide a stable unique \`id\` so the label and helper text can be connected to the input, including before client rendering completes.
+Give each field a clear label. Provide a stable unique `id` so the label and helper text can be connected to the input, including before client rendering completes.
 
 ```jsx
 <TextField
@@ -50,11 +50,11 @@ Give each field a clear label. Provide a stable unique \`id\` so the label and h
 
 A placeholder can show an example format, but it does not replace the label. Labels remain visible after users enter a value and provide the purpose of the field.
 
-Use \`name\` when the value participates in form submission or a form library. Choose names that are stable and meaningful.
+Use `name` when the value participates in form submission or a form library. Choose names that are stable and meaningful.
 
 ## Controlled and uncontrolled fields
 
-A controlled field receives its value from React state and reports changes through \`onChange\`:
+A controlled field receives its value from React state and reports changes through `onChange`:
 
 ```jsx
 import { useState } from 'react';
@@ -75,9 +75,9 @@ function DisplayNameField() {
 }
 ```
 
-The input value is read from \`event.target.value\`. Keep the value type consistent across renders; for an empty text field, initialize the state to an empty string instead of switching between \`undefined\` and a string.
+The input value is read from `event.target.value`. Keep the value type consistent across renders; for an empty text field, initialize the state to an empty string instead of switching between `undefined` and a string.
 
-An uncontrolled field stores its current value in the DOM. Use \`defaultValue\` for an initial value when React does not need to update it on each keystroke:
+An uncontrolled field stores its current value in the DOM. Use `defaultValue` for an initial value when React does not need to update it on each keystroke:
 
 ```jsx
 <TextField
@@ -88,11 +88,11 @@ An uncontrolled field stores its current value in the DOM. Use \`defaultValue\` 
 />
 ```
 
-Use \`value\` for controlled input and \`defaultValue\` for uncontrolled input. Do not pass both for the same field.
+Use `value` for controlled input and `defaultValue` for uncontrolled input. Do not pass both for the same field.
 
 ## Input types and native attributes
 
-The \`type\` prop selects a native input type, such as \`email\`, \`password\`, \`search\`, or \`date\`:
+The `type` prop selects a native input type, such as `email`, `password`, `search`, or `date`:
 
 ```jsx
 <TextField
@@ -103,7 +103,7 @@ The \`type\` prop selects a native input type, such as \`email\`, \`password\`, 
 />
 ```
 
-Native HTML attributes are passed through \`slotProps.htmlInput\`:
+Native HTML attributes are passed through `slotProps.htmlInput`:
 
 ```jsx
 <TextField
@@ -120,18 +120,18 @@ Native HTML attributes are passed through \`slotProps.htmlInput\`:
 />
 ```
 
-Use a number input only when increment and decrement controls fit the task. Numeric inputs can permit signs, decimal points, or other values that may not match an application's rules. For identifiers such as postal codes, phone numbers, or account numbers, use a text input with appropriate input guidance instead of \`type="number"\`.
+Use a number input only when increment and decrement controls fit the task. Numeric inputs can permit signs, decimal points, or other values that may not match an application's rules. For identifiers such as postal codes, phone numbers, or account numbers, use a text input with appropriate input guidance instead of `type="number"`.
 
-The \`inputMode\` attribute can hint which virtual keyboard is helpful on touch devices. It does not validate or convert the entered value.
+The `inputMode` attribute can hint which virtual keyboard is helpful on touch devices. It does not validate or convert the entered value.
 
 ## Native input slot versus Material UI input slot
 
 TextField exposes multiple slots:
 
-- \`slotProps.htmlInput\` passes attributes to the native \`<input>\` or \`<textarea>\`.
-- \`slotProps.input\` passes props to the Material UI Input, FilledInput, or OutlinedInput component.
-- \`slotProps.inputLabel\` configures the InputLabel component.
-- \`slotProps.formHelperText\` configures the FormHelperText component.
+- `slotProps.htmlInput` passes attributes to the native `<input>` or `<textarea>`.
+- `slotProps.input` passes props to the Material UI Input, FilledInput, or OutlinedInput component.
+- `slotProps.inputLabel` configures the InputLabel component.
+- `slotProps.formHelperText` configures the FormHelperText component.
 
 ```jsx
 <TextField
@@ -145,11 +145,11 @@ TextField exposes multiple slots:
 />
 ```
 
-These slots control different layers. Use the native HTML slot for native input attributes such as \`min\`, \`max\`, \`step\`, \`autoComplete\`, and \`inputMode\`. Use the MUI input slot when configuring the input component itself, such as its adornments.
+These slots control different layers. Use the native HTML slot for native input attributes such as `min`, `max`, `step`, `autoComplete`, and `inputMode`. Use the MUI input slot when configuring the input component itself, such as its adornments.
 
 ## Multiline fields
 
-Set \`multiline\` to render an expanding text area. Use \`minRows\` and \`maxRows\` to bound its height:
+Set `multiline` to render an expanding text area. Use `minRows` and `maxRows` to bound its height:
 
 ```jsx
 <TextField
@@ -162,11 +162,11 @@ Set \`multiline\` to render an expanding text area. Use \`minRows\` and \`maxRow
 />
 ```
 
-Use a single-line input for concise values and a multiline field for longer content. If the field has a known fixed height, the \`rows\` prop can set its row count.
+Use a single-line input for concise values and a multiline field for longer content. If the field has a known fixed height, the `rows` prop can set its row count.
 
 ## Error and required states
 
-Use the \`error\` prop to apply an error state and provide a message that explains how to correct the value:
+Use the `error` prop to apply an error state and provide a message that explains how to correct the value:
 
 ```jsx
 <TextField
@@ -178,7 +178,7 @@ Use the \`error\` prop to apply an error state and provide a message that explai
 />
 ```
 
-The visual error state alone does not describe what is wrong. Pair it with clear text and validate the value in the application. The browser's \`required\` attribute can express that a value is required, but applications still need appropriate submission and error handling.
+The visual error state alone does not describe what is wrong. Pair it with clear text and validate the value in the application. The browser's `required` attribute can express that a value is required, but applications still need appropriate submission and error handling.
 
 ```jsx
 <TextField
@@ -193,10 +193,10 @@ Keep helper text concise. It should explain the format, requirement, or error in
 
 ## Full width, size, disabled, and read-only
 
-- \`fullWidth\` makes the field use the width of its containing block.
-- \`size="small"\` provides a more compact control than \`medium\`.
-- \`disabled\` prevents interaction and removes the field from normal form submission.
-- \`slotProps.htmlInput.readOnly\` makes the value uneditable while remaining focusable.
+- `fullWidth` makes the field use the width of its containing block.
+- `size="small"` provides a more compact control than `medium`.
+- `disabled` prevents interaction and removes the field from normal form submission.
+- `slotProps.htmlInput.readOnly` makes the value uneditable while remaining focusable.
 
 A disabled and a read-only field have different meanings. Use disabled when the control is unavailable. Use read-only when users need to inspect and copy a value but must not change it.
 
@@ -229,20 +229,20 @@ TextField covers the common field pattern. Use FormControl, InputLabel, an input
 
 Common input components include:
 
-- \`Input\`: the standard underline input.
-- \`FilledInput\`: an input with a filled surface.
-- \`OutlinedInput\`: an input with an outline.
-- \`InputBase\`: a lower-level input foundation used when designing a custom field.
+- `Input`: the standard underline input.
+- `FilledInput`: an input with a filled surface.
+- `OutlinedInput`: an input with an outline.
+- `InputBase`: a lower-level input foundation used when designing a custom field.
 
 When composing lower-level pieces, preserve the label association, error announcement, focus behavior, and helper text relationship yourself.
 
 ## Common mistakes
 
 - Using placeholder text as the only label.
-- Reusing the same \`id\` for multiple fields.
-- Setting both \`value\` and \`defaultValue\`.
-- Passing a native attribute to \`slotProps.input\` instead of \`slotProps.htmlInput\`.
-- Using \`type="number"\` for identifiers that may contain leading zeros.
+- Reusing the same `id` for multiple fields.
+- Setting both `value` and `defaultValue`.
+- Passing a native attribute to `slotProps.input` instead of `slotProps.htmlInput`.
+- Using `type="number"` for identifiers that may contain leading zeros.
 - Showing an error color without a useful error message.
 - Treating disabled and read-only as the same state.
 - Using a helper message that is not connected to a stable field ID in custom compositions.
@@ -250,7 +250,7 @@ When composing lower-level pieces, preserve the label association, error announc
 
 ## Recap
 
-TextField is a convenience wrapper for common form fields. Provide a visible label, a stable ID, and useful helper or error text. Keep controlled and uncontrolled patterns separate. Use \`slotProps.htmlInput\` for native attributes and \`slotProps.input\` for the Material UI input component. Compose the lower-level pieces when a specialized field needs more control.
+TextField is a convenience wrapper for common form fields. Provide a visible label, a stable ID, and useful helper or error text. Keep controlled and uncontrolled patterns separate. Use `slotProps.htmlInput` for native attributes and `slotProps.input` for the Material UI input component. Compose the lower-level pieces when a specialized field needs more control.
 
 ## Practice task
 
