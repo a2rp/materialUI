@@ -21,7 +21,7 @@ Add this component to the existing application:
 
 ```text
 src/
-��y��yۧu���@�w^~)�t App.jsx
+  App.jsx
 ```
 
 ## Example: project name feedback
