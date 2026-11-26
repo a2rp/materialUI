@@ -319,6 +319,13 @@ Before shipping, confirm that:
 - Responsive design does not cause server/client markup disagreement.
 - Production build output has no hydration warnings or unstyled flash.
 
+## Recap
+
+- Use the Material UI integration that matches the Next.js router and version.
+- Collect and insert Emotion styles in the framework's supported rendering path.
+- Keep client boundaries limited to interactive components and make server and client markup consistent.
+- Check hydration, streaming, CSS layers, media-query behavior, and color-scheme initialization in the production rendering setup.
+
 ## Chapter navigation
 
 <table width="100%">
