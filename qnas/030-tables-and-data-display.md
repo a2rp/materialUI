@@ -114,7 +114,7 @@ Yes, when the action belongs to that record. Give each control an accessible nam
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous Q&amp;A</th>
