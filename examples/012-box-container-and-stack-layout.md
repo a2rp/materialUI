@@ -68,7 +68,7 @@ function MemberRow({ member }) {
             {member.name}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {member.role} � {member.email}
+            {member.role} - {member.email}
           </Typography>
         </Box>
 
