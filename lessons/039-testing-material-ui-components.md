@@ -293,6 +293,21 @@ Before merging tests for a Material UI interface, confirm that:
 - Snapshots are small and supplemental rather than the main test.
 - Browser-only layout and visual behavior receive browser-level checks.
 
+## Common mistakes
+
+- Querying generated Emotion classes instead of roles, labels, and visible text.
+- Testing only implementation details while missing the user's observable behavior.
+- Forgetting to await asynchronous interactions or feedback.
+- Assuming a DOM test proves visual layout, real browser behavior, or assistive-technology usability.
+- Leaving portals, timers, or shared state behind between tests.
+
+## Recap
+
+- Query controls by accessible role and name, and interact with them using realistic user events.
+- Cover forms, dialogs, portals, keyboard behavior, and asynchronous feedback where the application uses them.
+- Use a shared render helper only when it adds useful providers or defaults.
+- Combine DOM tests with browser, visual, accessibility, and manual review for behavior the test environment cannot prove.
+
 ## Chapter navigation
 
 <table width="100%">
