@@ -180,6 +180,13 @@ Automated checks can catch some issues, but they do not replace interaction and 
 - Clipping focus rings with overflow or stacking contexts.
 - Forgetting to announce completion after an asynchronous action.
 
+## Recap
+
+- Start with semantic HTML and give each interactive control an accessible name.
+- Preserve keyboard operation, visible focus, and the component's expected arrow-key or tab behavior.
+- Connect labels, descriptions, errors, and status announcements to the relevant controls.
+- Review contrast, zoom, reduced motion, dialogs, and overlays in addition to automated accessibility checks.
+
 ## Chapter navigation
 
 <table width="100%">
