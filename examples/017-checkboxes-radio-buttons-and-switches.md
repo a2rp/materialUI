@@ -242,6 +242,12 @@ The page initially has Product updates and Security alerts selected. The select-
 4. Decide whether the switch should save immediately or wait for form submission.
 5. Persist the settings using the application's chosen data layer.
 
+## Common mistakes
+
+- Treating a checkbox's boolean checked value like a radio group's selected string.
+- Showing a radio or checkbox group without a programmatic group label.
+- Using color alone to communicate selection, validation, or disabled state.
+
 ## Chapter navigation
 
 <table width="100%">
