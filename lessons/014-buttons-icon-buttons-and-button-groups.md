@@ -15,7 +15,7 @@ After this chapter, you should be able to:
 
 Buttons let users perform an action or make a choice. Their label should make the result clear. Use a link for navigation and a button for an action.
 
-Material UI provides \`Button\`, \`IconButton\`, \`ButtonGroup\`, and other specialized controls. Add only the control package the application needs. The Material UI icon set is a separate package.
+Material UI provides `Button`, `IconButton`, `ButtonGroup`, and other specialized controls. Add only the control package the application needs. The Material UI icon set is a separate package.
 
 ## Button variants and emphasis
 
@@ -23,9 +23,9 @@ Button has three standard variants:
 
 | Variant | Visual emphasis | Typical use |
 | --- | --- | --- |
-| \`contained\` | Highest emphasis with a filled surface | The primary action in a group or screen |
-| \`outlined\` | Medium emphasis with a border | An important alternative action |
-| \`text\` | Lowest emphasis | A secondary action or a low emphasis action in a card |
+| `contained` | Highest emphasis with a filled surface | The primary action in a group or screen |
+| `outlined` | Medium emphasis with a border | An important alternative action |
+| `text` | Lowest emphasis | A secondary action or a low emphasis action in a card |
 
 ```jsx
 import Button from '@mui/material/Button';
@@ -37,11 +37,11 @@ import Button from '@mui/material/Button';
 
 Use emphasis to show priority. A page or dialog usually has one primary action. If every action is filled, users may not know which is most important.
 
-Buttons can also use theme palette colors such as \`primary\`, \`secondary\`, \`success\`, \`warning\`, and \`error\`, when those meanings fit the action. Color should not be the only signal of an outcome.
+Buttons can also use theme palette colors such as `primary`, `secondary`, `success`, `warning`, and `error`, when those meanings fit the action. Color should not be the only signal of an outcome.
 
 ## Button size and width
 
-Use \`size="small"\`, \`"medium"\`, or \`"large"\` to choose a supported control size. Use \`fullWidth\` when the button should fill its available container:
+Use `size="small"`, `"medium"`, or `"large"` to choose a supported control size. Use `fullWidth` when the button should fill its available container:
 
 ```jsx
 <Button size="small" variant="outlined">
@@ -57,7 +57,7 @@ Full width is useful in some narrow layouts and forms. It is not a replacement f
 
 ## Button actions and navigation
 
-Use \`onClick\` for an action:
+Use `onClick` for an action:
 
 ```jsx
 <Button
@@ -70,7 +70,7 @@ Use \`onClick\` for an action:
 </Button>
 ```
 
-When the control navigates to a location, use an anchor. Providing \`href\` makes Button render as a link:
+When the control navigates to a location, use an anchor. Providing `href` makes Button render as a link:
 
 ```jsx
 <Button href="/account/security" variant="outlined">
@@ -78,7 +78,7 @@ When the control navigates to a location, use an anchor. Providing \`href\` make
 </Button>
 ```
 
-For client-side routing, use your routing library's link component through the \`component\` prop and provide a meaningful destination. Do not make a non-navigation action look like a link, or use a button solely to navigate when an anchor is appropriate.
+For client-side routing, use your routing library's link component through the `component` prop and provide a meaningful destination. Do not make a non-navigation action look like a link, or use a button solely to navigate when an anchor is appropriate.
 
 ## Icons with text buttons
 
@@ -93,7 +93,7 @@ import SaveIcon from '@mui/icons-material/Save';
 </Button>
 ```
 
-Use \`startIcon\` and \`endIcon\` to position an icon before or after the label. The icon package is separate from \`@mui/material\`.
+Use `startIcon` and `endIcon` to position an icon before or after the label. The icon package is separate from `@mui/material`.
 
 Avoid adding decorative icons that do not clarify the action. If the icon itself repeats the visible label, consider hiding the icon from assistive technology.
 
@@ -112,13 +112,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 The label should describe the action, not merely the icon shape. If the control's meaning changes with state, update the accessible name to reflect the current action or state as appropriate.
 
-Use \`size\` to adjust the control's visual size and \`color\` when a palette meaning is clear. A tooltip can provide a visible hint, but it should not replace the accessible name on an icon-only button.
+Use `size` to adjust the control's visual size and `color` when a palette meaning is clear. A tooltip can provide a visible hint, but it should not replace the accessible name on an icon-only button.
 
 ## Disabled and loading states
 
-Use \`disabled\` when an action is unavailable. Explain the requirement when users need to know why they cannot act.
+Use `disabled` when an action is unavailable. Explain the requirement when users need to know why they cannot act.
 
-For supported current versions, Button's \`loading\` prop shows progress and disables interaction while work is pending:
+For supported current versions, Button's `loading` prop shows progress and disables interaction while work is pending:
 
 ```jsx
 <Button
@@ -130,7 +130,7 @@ For supported current versions, Button's \`loading\` prop shows progress and dis
 </Button>
 ```
 
-The value should be a boolean or \`null\`. Keep the action's label meaningful while it loads. Show a separate status message if users need more detail than a progress indicator can convey.
+The value should be a boolean or `null`. Keep the action's label meaningful while it loads. Show a separate status message if users need more detail than a progress indicator can convey.
 
 ## ButtonGroup
 
@@ -150,7 +150,7 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 </ButtonGroup>
 ```
 
-The buttons should be immediate children of ButtonGroup. Groups can be horizontal or vertical through \`orientation\`. Provide an accessible label that describes the group.
+The buttons should be immediate children of ButtonGroup. Groups can be horizontal or vertical through `orientation`. Provide an accessible label that describes the group.
 
 ButtonGroup is best for related actions or navigation choices that remain separate actions. If buttons represent a mutually exclusive selected value, use a selection control such as ToggleButtonGroup, radio buttons, or a select rather than treating an action group as state.
 
