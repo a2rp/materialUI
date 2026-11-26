@@ -299,7 +299,7 @@ Dialog is connected to a title and description. Material UI manages focus while 
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous example</th>
