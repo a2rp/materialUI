@@ -141,6 +141,13 @@ Consider Pro or Premium only when the product requires a feature reserved for th
 - Overriding grid keyboard behavior without preserving accessible focus.
 - Choosing a paid feature before confirming that the application needs it.
 
+## Recap
+
+- Install Data Grid from the separate MUI X package and check whether a required feature belongs to Community, Pro, or Premium.
+- Provide stable row identifiers and keep column definitions stable where practical.
+- Choose client-side or server-side sorting, filtering, and pagination to match the data volume and API design.
+- Preserve keyboard access and clear loading, empty, and error feedback.
+
 ## Chapter navigation
 
 <table width="100%">
