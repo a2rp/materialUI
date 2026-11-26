@@ -12,7 +12,7 @@ Build a preferences screen with a custom single Select, a native time-zone selec
 
 ## Example: notification preferences
 
-Save this as \`App.jsx\` and render \`<App />\` from the existing application entry point.
+Save this as `App.jsx` and render `<App />` from the existing application entry point.
 
 ```jsx
 import { useState } from 'react';
@@ -216,8 +216,8 @@ The preferences and menu actions are local demonstrations. They do not access an
 
 ## How the example works
 
-- The Region field uses TextField's \`select\` mode for a custom popup.
-- The Time zone field uses NativeSelect and native \`option\` elements.
+- The Region field uses TextField's `select` mode for a custom popup.
+- The Time zone field uses NativeSelect and native `option` elements.
 - The Notification types field uses a custom multiple Select with an array value.
 - The Account actions button anchors a Menu to the clicked button.
 - Choosing a menu item updates a status message and closes the Menu.
