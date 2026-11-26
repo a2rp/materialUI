@@ -215,6 +215,13 @@ Before shipping a performance change, confirm that:
 - Large data views, fonts, images, and layout shifts are reviewed.
 - The before-and-after result is measured in a production-like build.
 
+## Recap
+
+- Measure the production bundle and rendering behavior before optimizing.
+- Prefer direct component and icon imports, and verify the result with the project's bundler analysis.
+- Defer large or rarely used routes and dependencies when that improves real user experience.
+- Avoid speculative memoization and keep large data views efficient based on measured needs.
+
 ## Chapter navigation
 
 <table width="100%">
