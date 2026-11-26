@@ -12,7 +12,7 @@ Create a small registration form that shows field-level errors, an error summary
 
 ## Example: registration form
 
-Save this as \`App.jsx\` and render \`<App />\` from the existing application entry point.
+Save this as `App.jsx` and render `<App />` from the existing application entry point.
 
 ```jsx
 import { useRef, useState } from 'react';
@@ -225,11 +225,11 @@ The email check is intentionally minimal for this teaching example. A production
 
 ## How the example works
 
-- The form uses \`noValidate\` so submission reaches the custom validation handler.
+- The form uses `noValidate` so submission reaches the custom validation handler.
 - Name and email are controlled TextFields with unique IDs and visible labels.
 - Field-level helper text changes to corrective messages when a value is invalid.
 - The radio options share one controlled value and a descriptive group label.
-- \`aria-describedby\` connects the radio group to its helper or error text.
+- `aria-describedby` connects the radio group to its helper or error text.
 - An error summary announces problems after submission.
 - The first invalid text field receives focus when present.
 - A polite status announces that valid details are ready to submit.
@@ -237,7 +237,7 @@ The email check is intentionally minimal for this teaching example. A production
 
 ## Expected result
 
-Submitting an empty form displays a summary and field-level messages. The full name field receives focus first. After entering a name, an email containing \`@\`, and a delivery choice, submitting displays a success status.
+Submitting an empty form displays a summary and field-level messages. The full name field receives focus first. After entering a name, an email containing `@`, and a delivery choice, submitting displays a success status.
 
 ## Verification checklist
 
