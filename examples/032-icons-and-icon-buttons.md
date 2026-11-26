@@ -213,7 +213,7 @@ Each button has an aria-label. Tooltip uses describeChild to provide extra infor
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous example</th>
