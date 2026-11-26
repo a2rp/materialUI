@@ -182,7 +182,7 @@ Automated checks can catch some issues, but they do not replace interaction and 
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous lesson</th>
