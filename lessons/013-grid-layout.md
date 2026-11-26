@@ -15,7 +15,7 @@ After this chapter, you should be able to:
 
 Material UI's Grid component builds responsive layouts from columns. It uses CSS Flexbox to arrange items in rows and lets each child occupy a chosen number of columns. This works well when the number of columns is known and the layout changes at predictable breakpoints.
 
-Grid is not the same as CSS Grid. It does not provide row spanning or automatic placement. If the design depends on those features, use CSS Grid through \`sx\` or a stylesheet.
+Grid is not the same as CSS Grid. It does not provide row spanning or automatic placement. If the design depends on those features, use CSS Grid through `sx` or a stylesheet.
 
 Grid is also different from MUI X Data Grid. The former arranges page content; the latter displays and manages tabular data.
 
@@ -27,7 +27,7 @@ For current Material UI, import Grid directly:
 import Grid from '@mui/material/Grid';
 ```
 
-A Grid container wraps Grid items. Every Grid is an item, so do not add an \`item\` prop. Set the item's width with \`size\`:
+A Grid container wraps Grid items. Every Grid is an item, so do not add an `item` prop. Set the item's width with `size`:
 
 ```jsx
 <Grid container spacing={2}>
@@ -40,9 +40,9 @@ A Grid container wraps Grid items. Every Grid is an item, so do not add an \`ite
 </Grid>
 ```
 
-With the default 12-column layout, \`size={8}\` occupies eight columns and \`size={4}\` occupies four. The component calculates a fluid width relative to its grid container.
+With the default 12-column layout, `size={8}` occupies eight columns and `size={4}` occupies four. The component calculates a fluid width relative to its grid container.
 
-Older code may use \`GridLegacy\` with \`item\`, \`xs\`, or \`sm\` props. Those are not the current Grid API. For a v9 course, use \`Grid\` with \`size\` and omit \`item\`.
+Older code may use `GridLegacy` with `item`, `xs`, or `sm` props. Those are not the current Grid API. For a v9 course, use `Grid` with `size` and omit `item`.
 
 ## Responsive item sizes
 
@@ -85,11 +85,11 @@ The default column count is 12. You can change it on the container and set item 
 </Grid>
 ```
 
-At xs the item uses two of four columns, at sm it uses four of eight, and at md it uses four of twelve. The \`size\` and \`columns\` values should be planned together so that widths add up as intended.
+At xs the item uses two of four columns, at sm it uses four of eight, and at md it uses four of twelve. The `size` and `columns` values should be planned together so that widths add up as intended.
 
 ## Spacing between items
 
-Use \`spacing\` to set the gap between items. Numeric values use the theme spacing scale:
+Use `spacing` to set the gap between items. Numeric values use the theme spacing scale:
 
 ```jsx
 <Grid container spacing={2}>
@@ -117,7 +117,7 @@ Spacing can be responsive. Its actual CSS value depends on the theme spacing con
 
 ## Offsets
 
-The \`offset\` prop moves an item to the right by a number of columns, or uses \`auto\` to push it toward the far edge of the row:
+The `offset` prop moves an item to the right by a number of columns, or uses `auto` to push it toward the far edge of the row:
 
 ```jsx
 <Grid container spacing={2}>
@@ -134,7 +134,7 @@ Offsets are useful for intentional whitespace. Check that the item and offset fi
 
 ## Flexible and content-sized items
 
-The \`size\` prop can also use \`auto\` for an item sized to its content, or \`grow\` for an item that grows into available space:
+The `size` prop can also use `auto` for an item sized to its content, or `grow` for an item that grows into available space:
 
 ```jsx
 <Grid container spacing={2}>
@@ -148,7 +148,7 @@ Use these forms when the row has content-sized controls and a flexible region. C
 
 ## Aligning Grid contents
 
-Grid uses Flexbox. Use the container's \`sx\` styles for alignment:
+Grid uses Flexbox. Use the container's `sx` styles for alignment:
 
 ```jsx
 <Grid
@@ -186,10 +186,10 @@ Do not use a Grid container for every wrapper. Use Box or Stack when there is no
 
 ## Common mistakes
 
-- Using the legacy \`item\` prop or breakpoint props like \`xs={6}\` with the current Grid.
+- Using the legacy `item` prop or breakpoint props like `xs={6}` with the current Grid.
 - Expecting Grid to span rows or automatically place items like CSS Grid.
 - Using Grid for a simple vertical list that Stack would express more clearly.
-- Forgetting that \`size\` is relative to the container's \`columns\` value.
+- Forgetting that `size` is relative to the container's `columns` value.
 - Combining item sizes and offsets that exceed the row's available columns.
 - Assuming the default spacing value is a fixed pixel amount regardless of the theme.
 - Setting a row direction to column instead of using Stack for vertical flow.
@@ -197,7 +197,7 @@ Do not use a Grid container for every wrapper. Use Box or Stack when there is no
 
 ## Recap
 
-Grid is a responsive flexbox-based column layout for known column structures. Use \`container\`, responsive \`size\`, and theme-based spacing. Use \`offset\` for deliberate alignment. Choose Stack for one-dimensional vertical flow and CSS Grid when row spanning or auto-placement is required.
+Grid is a responsive flexbox-based column layout for known column structures. Use `container`, responsive `size`, and theme-based spacing. Use `offset` for deliberate alignment. Choose Stack for one-dimensional vertical flow and CSS Grid when row spanning or auto-placement is required.
 
 ## Practice task
 
