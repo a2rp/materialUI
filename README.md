@@ -114,7 +114,7 @@ The application must already have compatible `react` and `react-dom` peer depend
 
 ## Course status
 
-The roadmap is established. Chapter lessons, Q&A, and examples are being completed in order, with each artifact committed and pushed separately.
+All 42 chapters have complete lessons, Q&A, and examples. Each artifact has been committed and pushed separately.
 
 ## License
 
