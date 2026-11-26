@@ -166,7 +166,7 @@ Avoid converting a local calendar date to a UTC timestamp without considering ti
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous lesson</th>
