@@ -174,7 +174,7 @@ The outer Box gives the grid a fixed height and full available width. Data Grid 
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous example</th>
