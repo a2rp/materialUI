@@ -112,11 +112,11 @@ function SortableHeading({ id, label, orderBy, order, onSort }) {
   );
 }
 
-function toggleSort(id, setOrderBy, setOrder) {
-  setOrder((current) =>
-    id === current.id && current.direction === "asc" ? "desc" : "asc",
-  );
+function handleSort(id, orderBy, order, setOrderBy, setOrder) {
+  const nextOrder =
+    id === orderBy && order === "asc" ? "desc" : "asc";
   setOrderBy(id);
+  setOrder(nextOrder);
 }
 ```
 
