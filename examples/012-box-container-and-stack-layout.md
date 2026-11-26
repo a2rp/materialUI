@@ -12,7 +12,7 @@ Create a responsive team directory with a centered page width, semantic sections
 
 ## Example: responsive team directory
 
-Save this component as \`App.jsx\`. Render \`<App />\` from the existing application entry point.
+Save this component as `App.jsx`. Render `<App />` from the existing application entry point.
 
 ```jsx
 import Container from '@mui/material/Container';
@@ -126,18 +126,18 @@ export default function App() {
 }
 ```
 
-The example uses fictional \`.test\` email addresses. It displays them as sample content and does not send messages or access a real team directory.
+The example uses fictional `.test` email addresses. It displays them as sample content and does not send messages or access a real team directory.
 
 ## How the layout works
 
-- \`Container\` centers the page and constrains its width.
-- The outer \`Stack\` creates vertical spacing between the header and member section.
-- \`Box component="main"\`, \`header\`, \`section\`, and \`li\` make the content structure explicit.
-- The member list is a Stack rendered as a \`ul\`, with list styles reset in \`sx\`.
+- `Container` centers the page and constrains its width.
+- The outer `Stack` creates vertical spacing between the header and member section.
+- `Box component="main"`, `header`, `section`, and `li` make the content structure explicit.
+- The member list is a Stack rendered as a `ul`, with list styles reset in `sx`.
 - Each member row switches from a column to a row at the small breakpoint.
 - The action buttons use a column on small screens and a row on wider screens.
-- \`useFlexGap\` uses CSS flexbox gap for spacing.
-- \`minWidth: 0\` lets the text region shrink and wrap when the row is narrow.
+- `useFlexGap` uses CSS flexbox gap for spacing.
+- `minWidth: 0` lets the text region shrink and wrap when the row is narrow.
 
 ## Expected result
 
@@ -146,7 +146,7 @@ The directory has a centered heading and three member rows. On a narrow viewport
 ## Verification checklist
 
 1. Confirm the directory is centered and has comfortable side gutters.
-2. Inspect the rendered DOM to confirm the page has a \`main\`, a named section, and a list of list items.
+2. Inspect the rendered DOM to confirm the page has a `main`, a named section, and a list of list items.
 3. Resize to a narrow viewport and verify that each member row changes to a column.
 4. Resize to a wider viewport and verify that member details and actions sit side by side.
 5. Check that the email strings do not cause horizontal page overflow.
@@ -158,7 +158,7 @@ The directory has a centered heading and three member rows. On a narrow viewport
 1. Add a role or department field and decide how it should wrap at narrow widths.
 2. Add an empty-state message for a directory with no members.
 3. Add a responsive page action next to the title using a Stack.
-4. Try removing \`useFlexGap\` and compare the spacing behavior.
+4. Try removing `useFlexGap` and compare the spacing behavior.
 5. Change the Container maximum width and inspect how the rows read on a large screen.
 
 ## Chapter navigation
