@@ -196,6 +196,12 @@ At narrow widths, the summary cards and lower sections stack vertically. At medi
 4. Try a custom `columns` value and update all item sizes to match.
 5. Use CSS Grid for a variation that requires an item to span two rows, then compare which primitive expresses the layout more clearly.
 
+## Common mistakes
+
+- Copying legacy Grid item, xs, or sm props into the current Grid API, which uses size.
+- Expecting the MUI Grid component to support row spanning or CSS Grid auto placement.
+- Choosing responsive item sizes that exceed the configured column count.
+
 ## Chapter navigation
 
 <table width="100%">
