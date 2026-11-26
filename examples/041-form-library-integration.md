@@ -298,6 +298,13 @@ In the running application, confirm that:
 - Reset restores the form's latest default values.
 - Switching to another project updates every field without losing value types.
 
+## Common mistakes
+
+- Connecting the same field with both register and Controller, creating competing sources of truth.
+- Omitting complete default values and receiving undefined or uncontrolled-to-controlled transitions.
+- Wiring a checkbox's value where the form library expects its checked state, or vice versa.
+- Keeping stale values when the form changes to a different record without resetting or replacing its data.
+
 ## Chapter navigation
 
 <table width="100%">
