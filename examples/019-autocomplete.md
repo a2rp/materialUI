@@ -125,7 +125,7 @@ export default function App() {
                   <Typography variant="body1">{person.name}</Typography>
                   <Typography variant="caption" color="text.secondary">
                     {person.team}
-                    {!person.active ? ' � Inactive' : ''}
+                    {!person.active ? ' (inactive)' : ''}
                   </Typography>
                 </Stack>
               </li>
