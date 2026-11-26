@@ -143,7 +143,7 @@ Consider Pro or Premium only when the product requires a feature reserved for th
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous lesson</th>
