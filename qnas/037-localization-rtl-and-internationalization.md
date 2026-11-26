@@ -126,7 +126,7 @@ Use clear language names users recognize, often including native labels such as 
 
 ## Chapter navigation
 
-<table style="width:100%">
+<table width="100%">
 <thead><tr><th>Previous Q&amp;A</th><th>Chapter lesson</th><th>Chapter example</th><th>Next Q&amp;A</th></tr></thead>
 <tbody><tr><td><a href="036-accessibility-and-keyboard-interaction.md">036 - Accessibility and keyboard interaction</a></td><td><a href="../lessons/037-localization-rtl-and-internationalization.md">Lesson</a></td><td><a href="../examples/037-localization-rtl-and-internationalization.md">Example</a></td><td><a href="038-server-side-rendering-and-nextjs.md">038 - Server-side rendering and Next.js</a></td></tr></tbody>
 </table>
