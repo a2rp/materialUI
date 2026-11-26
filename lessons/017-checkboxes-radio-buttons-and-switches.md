@@ -39,7 +39,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 
 Make the label describe the option or setting. A switch labelled "Notifications" is ambiguous if it could mean several types; a label such as "Email me product updates" describes the effect.
 
-When you cannot use FormControlLabel, give the input an accessible name through an appropriate label association or \`aria-label\` on the input slot.
+When you cannot use FormControlLabel, give the input an accessible name through an appropriate label association or `aria-label` on the input slot.
 
 ## Checkbox groups
 
@@ -103,7 +103,7 @@ function NotificationOptions() {
 }
 ```
 
-Each checkbox represents a separate boolean value. Use a \`name\` so the event handler can update the corresponding choice.
+Each checkbox represents a separate boolean value. Use a `name` so the event handler can update the corresponding choice.
 
 ## Parent and child checkboxes
 
@@ -167,7 +167,7 @@ function DeliveryChoice() {
 }
 ```
 
-RadioGroup provides group-level keyboard behavior. Use \`row\` when the controls should be arranged horizontally and enough space is available. The group should have an appropriate default value when the task expects one option to be selected.
+RadioGroup provides group-level keyboard behavior. Use `row` when the controls should be arranged horizontally and enough space is available. The group should have an appropriate default value when the task expects one option to be selected.
 
 ## Switch for a single setting
 
@@ -192,7 +192,7 @@ Make the state and effect understandable from the label. For example, "Email me 
 
 ## Default values and controlled state
 
-Use \`defaultChecked\` when the component should manage its own initial checked value. Use \`checked\` and \`onChange\` when React state controls it:
+Use `defaultChecked` when the component should manage its own initial checked value. Use `checked` and `onChange` when React state controls it:
 
 ```jsx
 <Checkbox defaultChecked />
@@ -203,7 +203,7 @@ Use \`defaultChecked\` when the component should manage its own initial checked 
 />
 ```
 
-Do not mix \`checked\` and \`defaultChecked\` on the same control. A controlled checkbox or switch should always receive a boolean value.
+Do not mix `checked` and `defaultChecked` on the same control. A controlled checkbox or switch should always receive a boolean value.
 
 ## Required, disabled, and helper information
 
@@ -218,7 +218,7 @@ Use explanatory text beside a group when users need to know what their choice me
 - Giving a single switch an ambiguous label such as "Enabled."
 - Omitting a visible label or accessible name.
 - Forgetting to label the RadioGroup as a group.
-- Using \`defaultChecked\` on a component that is controlled by React state.
+- Using `defaultChecked` on a component that is controlled by React state.
 - Treating indeterminate as an actual third submitted value.
 - Using a long radio list when a Select would be easier to scan.
 - Communicating a required choice only through color or a disabled state.
