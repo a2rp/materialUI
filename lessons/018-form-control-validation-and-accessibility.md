@@ -37,7 +37,7 @@ import Input from '@mui/material/Input';
 </FormControl>
 ```
 
-A TextField already connects much of this structure for you. Supply a unique \`id\`, visible \`label\`, and helpful \`helperText\`:
+A TextField already connects much of this structure for you. Supply a unique `id`, visible `label`, and helpful `helperText`:
 
 ```jsx
 <TextField
@@ -55,18 +55,18 @@ Every input needs an accessible name. Use a visible label whenever possible. A p
 
 For a custom composition:
 
-- Connect a label to the input with matching \`htmlFor\` and \`id\`.
-- Connect explanatory or error text with \`aria-describedby\`.
+- Connect a label to the input with matching `htmlFor` and `id`.
+- Connect explanatory or error text with `aria-describedby`.
 - Use unique IDs when multiple controls appear on the page.
 - Give checkbox, radio, and switch controls a visible label or another accessible name.
 
-TextField's \`id\` helps connect its label and helper text. For custom controls, confirm the actual relationships rather than assuming that nearby text is associated automatically.
+TextField's `id` helps connect its label and helper text. For custom controls, confirm the actual relationships rather than assuming that nearby text is associated automatically.
 
 ## Required fields
 
-The \`required\` prop communicates that a field is required and can enable browser constraint validation. It does not replace application validation or server-side validation.
+The `required` prop communicates that a field is required and can enable browser constraint validation. It does not replace application validation or server-side validation.
 
-Show users which fields are required and what format is expected. Do not mark fields required if the product does not require them. If a custom submission flow uses \`noValidate\`, implement the necessary validation and feedback yourself.
+Show users which fields are required and what format is expected. Do not mark fields required if the product does not require them. If a custom submission flow uses `noValidate`, implement the necessary validation and feedback yourself.
 
 ```jsx
 <TextField
@@ -81,7 +81,7 @@ Show users which fields are required and what format is expected. Do not mark fi
 
 ## Error states and messages
 
-Use the \`error\` prop to display an invalid state and show text that explains the problem and the next step:
+Use the `error` prop to display an invalid state and show text that explains the problem and the next step:
 
 ```jsx
 <TextField
@@ -97,7 +97,7 @@ Use the \`error\` prop to display an invalid state and show text that explains t
 
 Color and an error icon are not enough on their own. Make the message specific, for example, "Enter an email address in the format name@example.com." Do not erase the user's input when validation fails.
 
-When composing fields manually, connect the error or helper message to the input through \`aria-describedby\`. Add \`aria-invalid="true"\` when the current value is invalid. TextField handles its own error presentation, but custom compositions need to preserve these relationships.
+When composing fields manually, connect the error or helper message to the input through `aria-describedby`. Add `aria-invalid="true"` when the current value is invalid. TextField handles its own error presentation, but custom compositions need to preserve these relationships.
 
 ## Choose when validation appears
 
@@ -170,7 +170,7 @@ After a failed submit, consider moving focus to the first invalid field or to an
 
 ## Browser validation and server validation
 
-Native HTML attributes such as \`required\`, \`type\`, \`min\`, and \`max\` can provide helpful browser behavior. Client-side checks improve feedback but can be bypassed. Validate important data again on the server and return errors that can be associated with the relevant fields.
+Native HTML attributes such as `required`, `type`, `min`, and `max` can provide helpful browser behavior. Client-side checks improve feedback but can be bypassed. Validate important data again on the server and return errors that can be associated with the relevant fields.
 
 Client validation should mirror the actual product rules and should not imply that data has been saved or accepted until the server confirms it.
 
@@ -180,7 +180,7 @@ Client validation should mirror the actual product rules and should not imply th
 - Showing a red outline with no explanatory message.
 - Reusing an ID and connecting a label to the wrong field.
 - Putting several inputs inside one FormControl.
-- Assuming helper text is associated in a custom composition without IDs or \`aria-describedby\`.
+- Assuming helper text is associated in a custom composition without IDs or `aria-describedby`.
 - Validating in a way that interrupts users before they can finish typing.
 - Clearing entered values when submission fails.
 - Announcing every changing error as an urgent alert.
@@ -190,7 +190,7 @@ Client validation should mirror the actual product rules and should not imply th
 
 ## Recap
 
-FormControl shares state among a single control and its label and helper text. TextField handles common patterns; lower-level compositions require explicit labels and descriptions. Use \`error\` with clear feedback, validate at predictable times, preserve user input, maintain keyboard focus, and validate again on the server.
+FormControl shares state among a single control and its label and helper text. TextField handles common patterns; lower-level compositions require explicit labels and descriptions. Use `error` with clear feedback, validate at predictable times, preserve user input, maintain keyboard focus, and validate again on the server.
 
 ## Practice task
 
