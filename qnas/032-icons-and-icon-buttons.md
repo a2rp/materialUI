@@ -104,7 +104,7 @@ The child must be able to receive the events and ref that Tooltip uses. A Materi
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous Q&amp;A</th>
