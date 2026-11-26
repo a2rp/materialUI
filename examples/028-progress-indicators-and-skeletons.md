@@ -20,4 +20,257 @@ npm install @mui/material @emotion/react @emotion/styled
 Add the component to the existing application:
 
 ```text
-src/�u���T5�@�������)���((���ᅵ����ɕ���Ё���������хѕ�()M�ٔ�ѡ�́�́������ခ����ɕ���ȁ����������ɽ��ѡ�����ѥ����������ѥ������������и()������)�����Ё��͕Mхє��ɽ���ɕ��М�)�����Ё���Ё�ɽ����դ���ѕɥ������М�)�����Ё	���ɽ����դ���ѕɥ���	���)�����Ё	��ѽ���ɽ����դ���ѕɥ���	��ѽ���)�����Ё��х���ȁ�ɽ����դ���ѕɥ�����х���Ȝ�)�����Ё1�����Aɽ�ɕ�́�ɽ����դ���ѕɥ���1�����Aɽ�ɕ�̜�)�����ЁA���ȁ�ɽ����դ���ѕɥ���A���Ȝ�)�����ЁM����ѽ���ɽ����դ���ѕɥ���M����ѽ���)�����ЁMх����ɽ����դ���ѕɥ���Mх����)�����ЁQ����Ʌ��䁙ɽ����դ���ѕɥ���Q����Ʌ����()����Ёͅ����I�����̀�l(���(������耝ݕ���䜰(����ѥѱ�耝]����䁅�ѥ٥�䜰(������х��耝��յ���䁽���ɽ���Ё��ѥ٥�䁙�ȁѡ�����ɕ�Ёݕ�����(���(���(������耝�Յ���䜰(����ѥѱ�耝EՅ����ɕ٥�ܜ�(������х��耝=����ɕ٥�܁�ѕ�́�ɽ��������ɽ���Ё�����ݹ�ȸ��(���(���(������耝����ٕ�䜰(����ѥѱ�耝���ٕ���х��̜�(������х��耝Aɽ�ɕ�́��ɽ�́��ѥٔ�����ٕ�䁵����ѽ��̸��(���)t�()�����Ё����ձЁ�չ�ѥ���������(������Ёm����Mхє��͕�1���Mхѕt���͕Mхє���������(������Ёmɕ����̰�͕�I������t���͕Mхє��ձ���(������Ёm�х��̰�͕�Mх���t���͕Mхє�����͔������ѥ���Ѽ������ɕ����̸���((������Ё��������􁱽��Mхє���􀝱��������((���չ�ѥ���ͥ�ձ�ѕI��Օ�Сɕ�ձ�Q������(������������������(������ɕ��ɸ�(�����((����͕�1���Mхє������������(����͕�Mх��̠�1�������ɕ����̸���((����ݥ���ܹ͕�Q�����Р�������(����������ɕ�ձ�Q��������Ս���̜���(��������͕�I�����̡ͅ����I�����̤�(��������͕�1���Mхє��������є���(��������͕�Mх��̡ͅ����I�����̹����Ѡ�����ɕ����́����������(������􁕱͔�����ɕ�ձ�Q������􀝕���䜤��(��������͕�I�����̡mt��(��������͕�1���Mхє��������є���(��������͕�Mх��̠�Q���ɕ�Օ�Ё������ѕ���9��ɕ����́ݕɔ���չ�����(������􁕱͔��(��������͕�I�����̡�ձ���(��������͕�1���Mхє����ɽȜ��(��������͕�Mх��̠�Q���ɕ���Ёɕ�Օ�Ё����������(�������(������������(���((���չ�ѥ���ɕ���I��Օ�Р���(����ͥ�ձ�ѕI��Օ�Р��Ս���̜��(���((��ɕ��ɸ��(�������х���ȁ���������􉵅�������]��Ѡ􉵐��������������̰�ʹ�ԁ����(�������Mх���������������(���������	���(�����������Q����Ʌ��䁍���������Ĉ�مɥ����Ј����ѕ�	��ѽ��(������������I������(�����������Q����Ʌ����(�����������Q����Ʌ��䁍�����ѕ�й͕��������(������������Q������ѽ�́����܁ͥ�ձ�є������ɕ�Ёɕ�Օ�Ё��э���̸(�����������Q����Ʌ����(���������	���((���������Mх�����ɕ�ѥ���ɽ܈�����������􁙱��]Ʌ���Ʌ���(�����������	��ѽ�(������������مɥ���􉍽�х�����(��������������ͅ�������������(�������������������젤����ͥ�ձ�ѕI��Օ�Р��Ս���̜��(�����������(������������1����ɕ�����(�����������	��ѽ��(�����������	��ѽ�(������������مɥ�����ѱ�����(��������������ͅ�������������(�������������������젤����ͥ�ձ�ѕI��Օ�Р�����䜥�(�����������(������������M��ձ�є������ɕ�ձ�(�����������	��ѽ��(�����������	��ѽ�(������������مɥ�����ѱ�����(��������������ͅ�������������(�������������������젤����ͥ�ձ�ѕI��Օ�Р���ɽȜ��(�����������(������������M��ձ�є���ɽ�(�����������	��ѽ��(���������Mх���((���������Q����Ʌ���ɽ����х��̈��ɥ����ٔ�����є��������ѕ�й͕��������(������������х����(���������Q����Ʌ����((���������A����(��������������������͕�ѥ���(�����������ɥ�������������ɕ���е���е��������(�����������ɥ����͍ɥ�����������������ɕ����̵�ɽ�ɕ�̜��չ��������(�����������ɥ���������������(����������مɥ�����ѱ�����(���������(�����������Q����Ʌ���(���������������ɕ���е���е��������(����������������������Ȉ(������������مɥ����؈(��������������������Ȱ����ȁ��(�����������(������������م�������ɕ�����(�����������Q����Ʌ����((����������������������(��������������(���������������1�����Aɽ�ɕ��(�������������������ɕ����̵�ɽ�ɕ�̈(�����������������ɥ��������1�������ɕ����̈(����������������(���������������Mх����ɥ�����������Ք��������������������ȁ���(�����������������lİ�Ȱ��t�������ѕ�������(�������������������A���ȁ�����ѕ��مɥ�����ѱ�������������ȁ���(���������������������M����ѽ��مɥ����ѕ�Ј�ݥ�Ѡ��Ԕ����(���������������������M����ѽ��مɥ����ѕ�Ј�ݥ�Ѡ��������(�������������������A�����(�������������������(���������������Mх���(��������������(������������((����������셱��������������Mхє���􀝕�ɽȜ�����(�����������������(��������������͕ٕɥ����ɽȈ(����������������ѥ����(�����������������	��ѽ�������􉥹��ɥЈ�ͥ��͵�������������ɕ���I��Օ����(������������������I����(�����������������	��ѽ��(���������������(������������������쁴�ȁ��(�������������(��������������I�����́��ձ����Ё�����������Q�䁅�����(������������������(������������((����������셱��������������Mхє���􀝍�����є�����ɕ�����������Ѡ����������(����������������Ё͕ٕɥ��􉥹����ɽ����х��̈�����쁴�ȁ���(��������������9��ɕ����́�ɔ��م���������ȁѡ�́٥�ܸ(������������������(������������((����������셱����������ɕ�����������Ѡ���������(�������������Mх���������������������ȁ���(���������������ɕ����̹�����ɕ���Ф�����(�����������������A���ȁ�����ɕ���й���مɥ�����ѱ�������������ȁ���(�������������������Q����Ʌ��䁍���������̈�مɥ�����Չѥѱ�Ĉ�(���������������������ɕ���йѥѱ��(�������������������Q����Ʌ����(�������������������Q����Ʌ��䁍�����ѕ�й͕��������(���������������������ɕ���й��х���(�������������������Q����Ʌ����(�����������������A�����(�����������������(�������������Mх���(������������((��������������Mхє���􀝥���������(�������������Q����Ʌ��䁍�����ѕ�й͕������䈁�������ȁ���(��������������9��ɕ�Օ�Ё��́�����������и(�������������Q����Ʌ����(������������(���������A�����(�������Mх���(�������х�����(����)�)���((���!�܁�Ёݽɭ�((��Q�����ѥ������ѽ�́ͥ�ձ�є�������͕�����ɕ�Օ�Ё�ͥ�����ѥ��ȸ�I�������ѡ�́ݥѠ�ѡ���������ѥ���́ɕ�����ф�ɕ�Օ�Ёݡ�����ѕ�Ʌѥ���ѡ�����ѕɸ�(��]�����ѡ��ɕ�Օ�Ё�́���������ѡ��ɕ���Ёɕ������́��ɭ������䁅��������́Ѽ�ѡ���ɽ�ɕ�́������ѽȸ(��Q�������ѕɵ���є�1�����Aɽ�ɕ�́����չ���ѕ́ѡ�Ёݽɬ��́����������ݥѡ��Ё��ٕ�ѥ�������ɍ��х���(��M����ѽ��ɽ�́�ɔ���������ɽ����ͥ�ѥٔ�ѕ�������䁉����͔�ѡ����ٔ��х��́���ͥ���ѡ������ɕ�������ɕ��䁅���չ��́ѡ�����������хє�(���ѕȁ������ѥ����ѡ���������ݥэ��́Ѽ�ɕ���ͅ�������ф������������Ё������хє���ȁ��ɕ��ٕɅ������ɽȸ(��Q�����ɽȁ���Ё����Ց�́��I���䁅�ѥ����Q���ɕ�Օ�Ё�хє��́����ɕ������ɔ�ɕ��她��((���Iո������������((ĸ�Mх�Ёѡ�����ѥ�����ٕ������Ё͕�ٕȁݥѠ�������ո���ـ�(ȸ�M����Ё1����ɕ����́������͕�ٔ�ѡ���ɽ�ɕ�́��ȁ����ͭ���ѽ��ɽ�̸(̸�]��Ё��ȁѡ��ͅ�����ɕ���Ё��ɑ́Ѽ�ɕ������ѡ�����������хє�(и����͔�M��ձ�є������ɕ�ձЁ���������ɴ�ѡ�������͡��́�����ѕ�ѥ���������䁵��ͅ���(Ը����͔�M��ձ�є���ɽȁ������ѥمє�I����(ظ�U͔���͍ɕ���ɕ���ȁ�ȁ�����ͥ�������ɕ��Ѽ�������Ёѡ�����������х��̰�����ɕ����������������ɽ�ɕ�́��Ȱ������������хє�(ܸ�����ɴ�ѡ����������́��Ё���ٔ�M����ѽ�������������́��ѕȁ�Ս���̰������ɕ�ձ�̰��ȁ�����ɔ�((���Y�ɥ�ѥ���((ĸ�I�������ѡ������͕�����ѥ��ȁݥѠ���ɕ�����幍�ɽ���́ɕ�Օ�Ё�������������������ѥ���ݡ���ѡ��ɕ�Օ�Ё�������́�и(ȸ������ѕɵ���є��ɽ�ɕ�́��ȁ��������������ݥѠ��������ɕ��م�Ք��ɽ��ѡ����������ɽ���̸(̸�������ɍձ��Aɽ�ɕ�́��ͥ��������ѽ��ݡ���������ѕ���́������ɕ�ɕ͡���(и�������������хє���ѥ���ѡ�Ё����́�͕�́�ɕ�є��ȁ�������ɕ���и(Ը��ͅ����M����ѽ�������ѥ���ݡ���͡����ȁ�́����Ʌ�ѥ����ȁ��������́ݥѠ���ɕ�Ս�����ѥ���͕�ѥ���((������������х���((��M��ݥ����������ɍ��х����ɽ�ɕ�́��ȁ��ɕ�Օ�Ёݡ�͔�������ѥ������չЁ�́չ���ݸ�(��1��٥���ѡ��ɕ�������ɭ������䁅�ѕȁѡ��ɕ�Օ�Ё��́����͡���(��Qɕ�ѥ�����������ɕ����͔��́�����������хє�(��M��ݥ������������́ͭ���ѽ����ѕȁ��ɕ�Օ�Ё����̸(�����չ��������������Ʌѥٔ�M����ѽ�������͕��Ʌѕ��(���������ѡ��ѥ��ȁ��ɕ���͕�ٕȁɕ�Օ�и�Q��́�ᅵ����ͥ�ձ�ѕ́ѡ������䁅���ɕ����͔��������((���AɅ�ѥ��()���������Ѡ�ͅ�����ɕ���и�Q������������ѕɵ���є��������������ѡ�Ё�͕́���ɽ�ɕ�́م�Ք��ɽ��������Յ�����Ʌѥ����ȁ������ɱ䁱���������������������Ʌѥ��������Ёɕ�͔�ѡ������ѕɵ���є�ɕ���Ё������ѽȁ�́����Ёɕ�ɕ͕�ѕ���������ɕ����ɍ��х���((������ѕȁ��٥��ѥ��((�х����ݥ�Ѡ�������(���ѡ����(��������(�������Ѡ�Aɕ٥��́�ᅵ����Ѡ�(�������Ѡ����ѕȁ���ͽ��Ѡ�(�������Ѡ����ѕȁD������Ѡ�(�������Ѡ�9��Ё�ᅵ����Ѡ�(��������(���ѡ����(���щ����(��������(�������ѐ�񄁡ɕ����ܵ�����̵͹������̵�������������������܀������̰�͹������̰����������������ѐ�(�������ѐ�񄁡ɕ�􈸸����ͽ�̼����ɽ�ɕ�̵������ѽ�̵����ͭ���ѽ�̹����1��ͽ����ѐ�(�������ѐ�񄁡ɕ�􈸸�Ź�̼����ɽ�ɕ�̵������ѽ�̵����ͭ���ѽ�̹����D��������ѐ�(�������ѐ�񄁡ɕ����䵍���̵�مх�̵���������̹������䀴����̰��مх�̰��������������ѐ�(��������(���щ����(�х���
+src/
+  App.jsx
+```
+
+## Example: report loading states
+
+Save this as `App.jsx` and render `<App />` from the existing application entry point.
+
+```jsx
+import { useState } from 'react';
+import Alert from '@mui/material/Alert';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
+import LinearProgress from '@mui/material/LinearProgress';
+import Paper from '@mui/material/Paper';
+import Skeleton from '@mui/material/Skeleton';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+
+const sampleReports = [
+  {
+    id: 'weekly',
+    title: 'Weekly activity',
+    detail: 'A summary of project activity for the current week.',
+  },
+  {
+    id: 'quality',
+    title: 'Quality review',
+    detail: 'Open review items grouped by project and owner.',
+  },
+  {
+    id: 'delivery',
+    title: 'Delivery status',
+    detail: 'Progress across active delivery milestones.',
+  },
+];
+
+export default function App() {
+  const [loadState, setLoadState] = useState('idle');
+  const [reports, setReports] = useState(null);
+  const [status, setStatus] = useState('Choose an option to load reports.');
+
+  const loading = loadState === 'loading';
+
+  function simulateRequest(resultType) {
+    if (loading) {
+      return;
+    }
+
+    setLoadState('loading');
+    setStatus('Loading reports.');
+
+    window.setTimeout(() => {
+      if (resultType === 'success') {
+        setReports(sampleReports);
+        setLoadState('complete');
+        setStatus(sampleReports.length + ' reports loaded.');
+      } else if (resultType === 'empty') {
+        setReports([]);
+        setLoadState('complete');
+        setStatus('The request completed. No reports were found.');
+      } else {
+        setReports(null);
+        setLoadState('error');
+        setStatus('The report request failed.');
+      }
+    }, 1000);
+  }
+
+  function retryRequest() {
+    simulateRequest('success');
+  }
+
+  return (
+    <Container component="main" maxWidth="md" sx={{ py: { xs: 3, sm: 5 } }}>
+      <Stack spacing={3}>
+        <Box>
+          <Typography component="h1" variant="h4" gutterBottom>
+            Reports
+          </Typography>
+          <Typography color="text.secondary">
+            The buttons below simulate different request outcomes.
+          </Typography>
+        </Box>
+
+        <Stack direction="row" spacing={1} flexWrap="wrap">
+          <Button
+            variant="contained"
+            disabled={loading}
+            onClick={() => simulateRequest('success')}
+          >
+            Load reports
+          </Button>
+          <Button
+            variant="outlined"
+            disabled={loading}
+            onClick={() => simulateRequest('empty')}
+          >
+            Simulate empty result
+          </Button>
+          <Button
+            variant="outlined"
+            disabled={loading}
+            onClick={() => simulateRequest('error')}
+          >
+            Simulate error
+          </Button>
+        </Stack>
+
+        <Typography role="status" aria-live="polite" color="text.secondary">
+          {status}
+        </Typography>
+
+        <Paper
+          component="section"
+          aria-labelledby="report-list-heading"
+          aria-describedby={loading ? 'reports-progress' : undefined}
+          aria-busy={loading}
+          variant="outlined"
+        >
+          <Typography
+            id="report-list-heading"
+            component="h2"
+            variant="h6"
+            sx={{ px: 2, pt: 2 }}
+          >
+            Available reports
+          </Typography>
+
+          {loading && (
+            <>
+              <LinearProgress
+                id="reports-progress"
+                aria-label="Loading reports"
+              />
+              <Stack aria-hidden="true" spacing={1} sx={{ p: 2 }}>
+                {[1, 2, 3].map((item) => (
+                  <Paper key={item} variant="outlined" sx={{ p: 2 }}>
+                    <Skeleton variant="text" width="45%" />
+                    <Skeleton variant="text" width="80%" />
+                  </Paper>
+                ))}
+              </Stack>
+            </>
+          )}
+
+          {!loading && loadState === 'error' && (
+            <Alert
+              severity="error"
+              action={
+                <Button color="inherit" size="small" onClick={retryRequest}>
+                  Retry
+                </Button>
+              }
+              sx={{ m: 2 }}
+            >
+              Reports could not be loaded. Try again.
+            </Alert>
+          )}
+
+          {!loading && loadState === 'complete' && reports?.length === 0 && (
+            <Alert severity="info" role="status" sx={{ m: 2 }}>
+              No reports are available for this view.
+            </Alert>
+          )}
+
+          {!loading && reports?.length > 0 && (
+            <Stack spacing={1} sx={{ p: 2 }}>
+              {reports.map((report) => (
+                <Paper key={report.id} variant="outlined" sx={{ p: 2 }}>
+                  <Typography component="h3" variant="subtitle1">
+                    {report.title}
+                  </Typography>
+                  <Typography color="text.secondary">
+                    {report.detail}
+                  </Typography>
+                </Paper>
+              ))}
+            </Stack>
+          )}
+
+          {loadState === 'idle' && (
+            <Typography color="text.secondary" sx={{ p: 2 }}>
+              No request has been made yet.
+            </Typography>
+          )}
+        </Paper>
+      </Stack>
+    </Container>
+  );
+}
+```
+
+## How it works
+
+- The action buttons simulate a one-second request using a timer. Replace this with the application's real data request when integrating the pattern.
+- While the request is pending, the report region is marked busy and points to the progress indicator.
+- The indeterminate LinearProgress communicates that work is happening without inventing a percentage.
+- Skeleton rows are hidden from assistive technology because the live status outside the busy region already announces the loading state.
+- After completion, the panel switches to real sample data, an explicit empty state, or a recoverable error.
+- The error Alert includes a Retry action. The request state is cleared before retrying.
+
+## Run and inspect
+
+1. Start the existing development server with `npm run dev`.
+2. Select Load reports and observe the progress bar and skeleton rows.
+3. Wait for the sample report cards to replace the loading state.
+4. Choose Simulate empty result and confirm the page shows an intentional empty message.
+5. Choose Simulate error and activate Retry.
+6. Use a screen reader or accessibility tree to inspect the loading status, busy region, labelled progress bar, and final state.
+7. Confirm the page does not leave Skeleton placeholders after success, empty results, or failure.
+
+## Variations
+
+1. Replace the one-second timer with a real asynchronous request and handle cancellation when the request supports it.
+2. Add determinate progress for a file upload with a measured value from the upload process.
+3. Add a CircularProgress beside a button while one item is being refreshed.
+4. Add an empty-state action that helps users create or find a report.
+5. Disable Skeleton animation when shimmer is distracting or conflicts with a reduced-motion setting.
+
+## Common mistakes
+
+- Showing fake percentage progress for a request whose completion amount is unknown.
+- Leaving the region marked busy after the request has finished.
+- Treating an empty response as a loading state.
+- Showing an endless skeleton after a request fails.
+- Announcing each decorative Skeleton line separately.
+- Calling the timer a real server request. This example simulates the delay and response locally.
+
+## Practice
+
+Add a fourth sample report. Then add a determinate upload panel that uses a progress value from an actual operation or a clearly labelled local demonstration. Do not reuse the indeterminate report indicator as if it represented a measured percentage.
+
+## Chapter navigation
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th>Previous example</th>
+      <th>Chapter lesson</th>
+      <th>Chapter Q&amp;A</th>
+      <th>Next example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="027-alerts-snackbars-and-feedback.md">027 - Alerts, snackbars, and feedback</a></td>
+      <td><a href="../lessons/028-progress-indicators-and-skeletons.md">Lesson</a></td>
+      <td><a href="../qnas/028-progress-indicators-and-skeletons.md">Q&amp;A</a></td>
+      <td><a href="029-chips-avatars-and-badges.md">029 - Chips, avatars, and badges</a></td>
+    </tr>
+  </tbody>
+</table>
