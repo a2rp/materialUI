@@ -217,7 +217,7 @@ Before shipping a performance change, confirm that:
 
 ## Chapter navigation
 
-<table style="width:100%">
+<table width="100%">
 <thead><tr><th>Previous lesson</th><th>Chapter Q&amp;A</th><th>Chapter example</th><th>Next lesson</th></tr></thead>
 <tbody><tr><td><a href="039-testing-material-ui-components.md">039 - Testing Material UI components</a></td><td><a href="../qnas/040-performance-bundle-size-and-tree-shaking.md">Q&amp;A</a></td><td><a href="../examples/040-performance-bundle-size-and-tree-shaking.md">Example</a></td><td><a href="041-form-library-integration.md">041 - Form library integration</a></td></tr></tbody>
 </table>
