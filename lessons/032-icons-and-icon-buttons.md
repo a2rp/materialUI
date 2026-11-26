@@ -151,7 +151,7 @@ Recent Material UI versions also provide a loading state for IconButton. It disa
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous lesson</th>
