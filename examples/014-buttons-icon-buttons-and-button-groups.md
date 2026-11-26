@@ -12,7 +12,7 @@ Create a report action panel with a primary save action, a navigation link, a la
 
 ## Example: report actions
 
-Save this as \`App.jsx\` and render \`<App />\` from the existing application entry point.
+Save this as `App.jsx` and render `<App />` from the existing application entry point.
 
 ```jsx
 import { useState } from 'react';
@@ -128,11 +128,11 @@ The report actions are illustrative. Save, download, copy, print, and removal ha
 ## How the controls work
 
 - The contained Save button is the primary action.
-- The outlined All reports control uses \`href\` and represents navigation.
+- The outlined All reports control uses `href` and represents navigation.
 - The report actions are grouped under an accessible group name.
 - Each grouped button runs a separate action handler.
 - The IconButton has an accessible name that describes its action.
-- Tooltip adds a visible hint but does not replace the IconButton's \`aria-label\`.
+- Tooltip adds a visible hint but does not replace the IconButton's `aria-label`.
 - The loading state prevents repeated save interaction while the simulated save is pending.
 - The status message uses a polite live region for feedback.
 - The action row stacks on narrow screens and becomes horizontal on wider screens.
