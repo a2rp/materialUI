@@ -2,11 +2,11 @@
 
 ## 1. What is the difference between a Button and an IconButton?
 
-Button usually contains a visible text label and may include start or end icons. IconButton represents an action using an icon alone, so it needs a clear accessible name such as \`aria-label="Open navigation"\`.
+Button usually contains a visible text label and may include start or end icons. IconButton represents an action using an icon alone, so it needs a clear accessible name such as `aria-label="Open navigation"`.
 
 ## 2. Which Button variants are available?
 
-The standard variants are \`text\`, \`outlined\`, and \`contained\`. Choose the variant according to the action's priority. A contained button is commonly the primary action, while outlined and text buttons carry less emphasis.
+The standard variants are `text`, `outlined`, and `contained`. Choose the variant according to the action's priority. A contained button is commonly the primary action, while outlined and text buttons carry less emphasis.
 
 ## 3. Should a screen have more than one contained button?
 
@@ -14,7 +14,7 @@ It can, if there are truly multiple equally important actions, but too many high
 
 ## 4. How do I make an action run when a button is clicked?
 
-Use the \`onClick\` handler:
+Use the `onClick` handler:
 
 ```jsx
 <Button onClick={saveChanges}>Save</Button>
@@ -24,15 +24,15 @@ The handler should perform the action or call the code that does.
 
 ## 5. Should I use Button or an anchor for navigation?
 
-Use a link when the user is navigating to a destination. Supplying \`href\` to Button makes its root render as an anchor. Use a native action button for operations such as saving, deleting, or opening a dialog.
+Use a link when the user is navigating to a destination. Supplying `href` to Button makes its root render as an anchor. Use a native action button for operations such as saving, deleting, or opening a dialog.
 
 ## 6. How do I use a client-side router link?
 
-Pass the router's link component through Button's \`component\` prop and provide the route destination. This preserves link semantics while allowing the router to handle navigation.
+Pass the router's link component through Button's `component` prop and provide the route destination. This preserves link semantics while allowing the router to handle navigation.
 
 ## 7. How do I add an icon to a text button?
 
-Use \`startIcon\` or \`endIcon\`:
+Use `startIcon` or `endIcon`:
 
 ```jsx
 <Button startIcon={<SaveIcon />}>Save changes</Button>
@@ -46,7 +46,7 @@ No. Icons are published in a separate package. Install that package when the app
 
 ## 9. Why does an IconButton need an accessible name?
 
-An icon may not communicate its action to a screen reader or to someone unfamiliar with its meaning. Add an \`aria-label\` that describes what activating the button does.
+An icon may not communicate its action to a screen reader or to someone unfamiliar with its meaning. Add an `aria-label` that describes what activating the button does.
 
 ## 10. Is a tooltip enough to label an IconButton?
 
@@ -58,7 +58,7 @@ Disabled means the action is currently unavailable. Loading means an action is i
 
 ## 12. How do I show a loading state on a Button?
 
-Use the \`loading\` prop with a boolean or \`null\`:
+Use the `loading` prop with a boolean or `null`:
 
 ```jsx
 <Button loading={isSaving} onClick={saveChanges}>
@@ -70,11 +70,11 @@ The loading state disables the button and displays progress. Keep its label mean
 
 ## 13. When should I use ButtonGroup?
 
-Use ButtonGroup to visually group related actions that belong together. Label the group with \`aria-label\` and make the buttons immediate children.
+Use ButtonGroup to visually group related actions that belong together. Label the group with `aria-label` and make the buttons immediate children.
 
 ## 14. Can ButtonGroup be vertical?
 
-Yes. Set \`orientation="vertical"\` to arrange its buttons vertically.
+Yes. Set `orientation="vertical"` to arrange its buttons vertically.
 
 ## 15. Is ButtonGroup appropriate for mutually exclusive selection?
 
@@ -82,11 +82,11 @@ Not usually. ButtonGroup groups actions visually. If the interface represents a 
 
 ## 16. Can ButtonGroup provide the same variant and size to its child buttons?
 
-Yes. Set shared properties such as \`variant\`, \`size\`, and \`color\` on ButtonGroup when the same setting should apply to the whole group.
+Yes. Set shared properties such as `variant`, `size`, and `color` on ButtonGroup when the same setting should apply to the whole group.
 
-## 17. What is the difference between \`size\` and \`fullWidth\`?
+## 17. What is the difference between `size` and `fullWidth`?
 
-\`size\` chooses a supported control size. \`fullWidth\` makes the button fill its parent container. They address different layout needs.
+`size` chooses a supported control size. `fullWidth` makes the button fill its parent container. They address different layout needs.
 
 ## 18. Why is a visible focus style important?
 
