@@ -19,7 +19,7 @@ Choose it over Select when the options are long, searchable, or asynchronously l
 
 ## Basic Autocomplete
 
-The \`renderInput\` callback must render a TextField and pass through the parameters it receives. Those parameters include the wiring required for focus, keyboard behavior, popup state, and accessibility:
+The `renderInput` callback must render a TextField and pass through the parameters it receives. Those parameters include the wiring required for focus, keyboard behavior, popup state, and accessibility:
 
 ```jsx
 import Autocomplete from '@mui/material/Autocomplete';
@@ -35,11 +35,11 @@ const cities = ['Delhi', 'Mumbai', 'Pune', 'Kolkata'];
 />
 ```
 
-Do not discard or replace \`params\` when customizing the input. The field should also have a useful visible label.
+Do not discard or replace `params` when customizing the input. The field should also have a useful visible label.
 
 ## Object options
 
-An option can be an object. Use \`getOptionLabel\` to choose the text shown in the field and popup:
+An option can be an object. Use `getOptionLabel` to choose the text shown in the field and popup:
 
 ```jsx
 const people = [
@@ -71,11 +71,11 @@ By default, the selected value is the option object. Matching uses strict equali
 />
 ```
 
-When labels can repeat, provide \`getOptionKey\` so each option has a unique key.
+When labels can repeat, provide `getOptionKey` so each option has a unique key.
 
 ## Current v9 option values
 
-Material UI v9 supports \`getOptionValue\` for applications that want the selected value to be a primitive such as an ID instead of the full option object:
+Material UI v9 supports `getOptionValue` for applications that want the selected value to be a primitive such as an ID instead of the full option object:
 
 ```jsx
 <Autocomplete
@@ -90,16 +90,16 @@ Material UI v9 supports \`getOptionValue\` for applications that want the select
 />
 ```
 
-The value function must return a unique, non-null primitive for every option. Callbacks such as \`getOptionLabel\` and \`renderOption\` still receive the original option object.
+The value function must return a unique, non-null primitive for every option. Callbacks such as `getOptionLabel` and `renderOption` still receive the original option object.
 
-If the application stores the whole object, leave \`getOptionValue\` out and use object values with a stable equality comparison where needed. Keep the chosen value model consistent with the rest of the form.
+If the application stores the whole object, leave `getOptionValue` out and use object values with a stable equality comparison where needed. Keep the chosen value model consistent with the rest of the form.
 
 ## Selected value and input text are separate
 
 Autocomplete has two related but independent states:
 
-- \`value\` is the selected option or options.
-- \`inputValue\` is the text currently in the textbox.
+- `value` is the selected option or options.
+- `inputValue` is the text currently in the textbox.
 
 Control them separately when the application needs to react to both:
 
@@ -123,7 +123,7 @@ Do not create a new array or object for the controlled value on every render unl
 
 ## Multiple selections
 
-Set \`multiple\` when the user may choose several options. The value is an array:
+Set `multiple` when the user may choose several options. The value is an array:
 
 ```jsx
 <Autocomplete
@@ -138,11 +138,11 @@ Set \`multiple\` when the user may choose several options. The value is an array
 />
 ```
 
-By default, selected options are represented with chips. Use \`limitTags\` when the field needs to show only a few chips while unfocused.
+By default, selected options are represented with chips. Use `limitTags` when the field needs to show only a few chips while unfocused.
 
 ## Custom selected-value rendering
 
-The \`renderValue\` prop customizes how selected value or values appear in the input. Use the provided item props when rendering interactive value elements so that focus and removal behavior continue to work:
+The `renderValue` prop customizes how selected value or values appear in the input. Use the provided item props when rendering interactive value elements so that focus and removal behavior continue to work:
 
 ```jsx
 <Autocomplete
@@ -164,11 +164,11 @@ The \`renderValue\` prop customizes how selected value or values appear in the i
 />
 ```
 
-Keep the selected values readable and removable. A custom renderer should preserve the props returned by \`getItemProps\`.
+Keep the selected values readable and removable. A custom renderer should preserve the props returned by `getItemProps`.
 
 ## Free solo text
 
-Set \`freeSolo\` when users may enter text that is not one of the suggestions:
+Set `freeSolo` when users may enter text that is not one of the suggestions:
 
 ```jsx
 <Autocomplete
@@ -180,7 +180,7 @@ Set \`freeSolo\` when users may enter text that is not one of the suggestions:
 />
 ```
 
-In free-solo mode, a value created by typing is a string, even when the options are objects. Handle both types in functions such as \`getOptionLabel\`:
+In free-solo mode, a value created by typing is a string, even when the options are objects. Handle both types in functions such as `getOptionLabel`:
 
 ```jsx
 <Autocomplete
@@ -199,7 +199,7 @@ If users are creating a new record rather than searching, make that behavior exp
 
 ## Grouped options
 
-Use \`groupBy\` to group options. Sort the options by the same grouping value so each group appears once:
+Use `groupBy` to group options. Sort the options by the same grouping value so each group appears once:
 
 ```jsx
 const groupedCities = [
@@ -228,7 +228,7 @@ For remote search:
 1. Control the input text.
 2. Debounce requests so each keystroke does not start an unnecessary request.
 3. Ignore or cancel stale responses so an older query cannot replace newer results.
-4. Use \`loading\` and \`loadingText\` while results are pending.
+4. Use `loading` and `loadingText` while results are pending.
 5. Show a helpful empty state when no results match.
 6. Keep the field label and status messages available to assistive technology.
 
@@ -236,7 +236,7 @@ When the server already filters results, configure the component not to apply a 
 
 ## Rendering options and disabled entries
 
-Use \`getOptionDisabled\` when some options cannot be selected. Use \`renderOption\` only when the default label is not enough. Spread the provided option props onto the rendered option element because they carry the component's focus and selection behavior:
+Use `getOptionDisabled` when some options cannot be selected. Use `renderOption` only when the default label is not enough. Spread the provided option props onto the rendered option element because they carry the component's focus and selection behavior:
 
 ```jsx
 <Autocomplete
@@ -265,11 +265,11 @@ Use a label that explains what is being selected. If helper text gives important
 
 ## Common mistakes
 
-- Failing to spread the parameters received by \`renderInput\`.
+- Failing to spread the parameters received by `renderInput`.
 - Recreating controlled object or array values on every render.
 - Relying on strict object equality after options are reloaded as new objects.
 - Forgetting that free-solo input can be a string even when options are objects.
-- Assuming the typed \`inputValue\` is the same as the selected \`value\`.
+- Assuming the typed `inputValue` is the same as the selected `value`.
 - Grouping options without sorting by the same group key.
 - Omitting unique keys when option labels repeat.
 - Replacing the props supplied to a custom rendered option.
