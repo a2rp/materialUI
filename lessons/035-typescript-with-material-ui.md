@@ -279,7 +279,7 @@ A declaration file only applies if it is included in the TypeScript program. Che
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous lesson</th>
