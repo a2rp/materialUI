@@ -124,7 +124,7 @@ Use a fieldset and legend for related controls that form one question, such as a
 
   <RadioGroup
     name="delivery"
-    aria-labelledby="delivery-label"
+    aria-labelledby="delivery-label" aria-describedby="delivery-help"
     value={delivery}
     onChange={(event) => setDelivery(event.target.value)}
   >
