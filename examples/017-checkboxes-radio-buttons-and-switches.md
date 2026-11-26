@@ -12,7 +12,7 @@ Build a notification preferences form with independent checkbox choices, a selec
 
 ## Example: notification preferences
 
-Save this as \`App.jsx\` and render \`<App />\` from the existing application entry point.
+Save this as `App.jsx` and render `<App />` from the existing application entry point.
 
 ```jsx
 import { useState } from 'react';
