@@ -159,6 +159,12 @@ The panel displays a clear save action, a navigation link, three grouped seconda
 4. Add a secondary icon to a text button while keeping the action name visible.
 5. Decide how the UI should communicate a save error and how users can retry.
 
+## Common mistakes
+
+- Giving an icon-only button no accessible name or relying on its tooltip as the only label.
+- Using a navigation link for an operation or a button for a destination.
+- Presenting a sample status update as though it saved or changed data on a server.
+
 ## Chapter navigation
 
 <table width="100%">
