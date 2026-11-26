@@ -193,7 +193,7 @@ The form uses the selected calendar date and the time-of-day fields from the Tim
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous example</th>
