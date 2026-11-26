@@ -21,7 +21,7 @@ Add the component to the existing application:
 
 ```text
 src/
-��y��yۧu���@�w^~)�t App.jsx
+  App.jsx
 ```
 
 ## Example: archive confirmation
