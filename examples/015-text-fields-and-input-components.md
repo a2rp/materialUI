@@ -12,7 +12,7 @@ Create a profile form that demonstrates controlled fields, an uncontrolled field
 
 ## Example: profile form
 
-Save this as \`App.jsx\` and render \`<App />\` from the existing application entry point.
+Save this as `App.jsx` and render `<App />` from the existing application entry point.
 
 ```jsx
 import { useState } from 'react';
@@ -167,27 +167,27 @@ The email check is intentionally minimal for this teaching example. Production a
 ## What the example demonstrates
 
 - The display name, email, and phone fields are controlled by React state.
-- The private note is initialized with \`defaultValue\` and remains uncontrolled.
+- The private note is initialized with `defaultValue` and remains uncontrolled.
 - The description and note fields use multiline text areas.
 - Each TextField has a unique ID and visible label.
 - The email field shows an error state and corrective helper text after invalid submission.
-- The display name's native input has a maximum character count through \`slotProps.htmlInput\`.
-- The form uses \`noValidate\` so its custom submit handler can display the example's message.
+- The display name's native input has a maximum character count through `slotProps.htmlInput`.
+- The form uses `noValidate` so its custom submit handler can display the example's message.
 - A polite status region communicates the successful submission result.
 
 ## Expected result
 
-The page shows a labelled profile form. Submitting it with an empty or malformed email displays an error message below the email field. Submitting an email that includes \`@\` displays a status message with the entered name and note length. No data is sent to a server.
+The page shows a labelled profile form. Submitting it with an empty or malformed email displays an error message below the email field. Submitting an email that includes `@` displays a status message with the entered name and note length. No data is sent to a server.
 
 ## Verification checklist
 
 1. Confirm each visible field label remains available after typing a value.
 2. Submit with an empty email and verify the field enters an error state.
-3. Enter an email without \`@\` and confirm corrective helper text appears.
+3. Enter an email without `@` and confirm corrective helper text appears.
 4. Enter a sample email and submit to see the success status.
 5. Type beyond the display name limit and confirm the native input stops accepting additional characters.
 6. Confirm the multiline fields grow within their row limits.
-7. Inspect the form and confirm the controlled fields use \`value\` while the private note uses \`defaultValue\`.
+7. Inspect the form and confirm the controlled fields use `value` while the private note uses `defaultValue`.
 8. Use keyboard navigation to move through the fields and submit button.
 
 ## Practice extensions
