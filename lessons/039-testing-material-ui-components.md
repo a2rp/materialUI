@@ -295,7 +295,7 @@ Before merging tests for a Material UI interface, confirm that:
 
 ## Chapter navigation
 
-<table style="width:100%">
+<table width="100%">
 <thead><tr><th>Previous lesson</th><th>Chapter Q&amp;A</th><th>Chapter example</th><th>Next lesson</th></tr></thead>
 <tbody><tr><td><a href="038-server-side-rendering-and-nextjs.md">038 - Server-side rendering and Next.js</a></td><td><a href="../qnas/039-testing-material-ui-components.md">Q&amp;A</a></td><td><a href="../examples/039-testing-material-ui-components.md">Example</a></td><td><a href="040-performance-bundle-size-and-tree-shaking.md">040 - Performance, bundle size, and tree shaking</a></td></tr></tbody>
 </table>
