@@ -232,6 +232,13 @@ Avoid global changes that make unrelated controls harder to use. Test customizat
 - Overriding a component's internal structure with private DOM assumptions.
 - Removing focus visibility during visual customization.
 
+## Recap
+
+- Compose components through children when the content structure is the customization point.
+- Use component to select a supported root element and slots or slotProps to customize documented internal parts.
+- Choose sx for local styles, styled for repeated component styling, and theme overrides for shared defaults.
+- Preserve semantics, refs, accessibility behavior, and stable public APIs when wrapping components.
+
 ## Chapter navigation
 
 <table width="100%">
