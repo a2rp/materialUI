@@ -328,6 +328,12 @@ Switch between all three locales and confirm that:
 - Text remains readable at a narrow viewport and with longer translated labels.
 - Production server-rendered HTML starts with the selected language and direction.
 
+## Common mistakes
+
+- Changing document direction without configuring the matching RTL Emotion cache and theme direction.
+- Expecting a Material UI locale bundle to translate application-owned messages or MUI X picker labels.
+- Configuring a date adapter locale but omitting the picker component locale text when the UI needs translation.
+
 ## Chapter navigation
 
 <table width="100%">
