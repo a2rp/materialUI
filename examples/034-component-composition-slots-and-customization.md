@@ -199,7 +199,7 @@ CompactAction forwards the ref and remaining props to Button. Tooltip can theref
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous example</th>
