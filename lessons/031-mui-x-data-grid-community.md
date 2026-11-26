@@ -109,7 +109,7 @@ Users can filter supported columns through the grid interface. Community support
 
 ### Row selection
 
-The grid supports selecting a row. Community selection is intended for a single selected row at a time. A checkbox column can make the selection affordance visible. Keep an action button or toolbar available for the selected record rather than hiding essential actions in an inaccessible interaction.
+Single-row selection is enabled by default. The Community grid also supports checkbox selection, which can expose row checkboxes and a select-all control for bulk workflows. Modifier-based multi-row selection with Ctrl or Cmd and range selection with Shift are Pro features. Keep selection actions clear, and check how selection should behave when users filter or change pages.
 
 ### Keyboard and accessibility
 
@@ -125,7 +125,7 @@ Keep loading state and row count consistent with the response so the grid does n
 
 ## When Community is enough
 
-Community is a good fit for many internal tools and admin views with modest data needs, built-in filtering and sorting, single-row selection, and pages no larger than 100 rows.
+Community is a good fit for many internal tools and admin views with modest data needs, built-in filtering and sorting, basic row selection, and pages no larger than 100 rows.
 
 Consider Pro or Premium only when the product requires a feature reserved for those plans, such as multi-column sorting, multiple simultaneous filters, column pinning or reordering, or other advanced grid capabilities. Verify the current plan comparison before committing to a feature-dependent design.
 
