@@ -108,7 +108,7 @@ Check the API and migration guidance for the installed version. Types can change
 
 ## Chapter navigation
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Previous Q&amp;A</th>
